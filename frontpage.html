@@ -1,0 +1,2679 @@
+<?php get_header(); ?>
+<html lang="en">
+
+<!--  TAGGING LIST STARTS HERE -->
+
+<!-- "choices": {
+"environment": "Environment",
+"religious_practices": "Religious practices",
+"economic_activities": "Economic Activities",
+"arts_communication": "Arts and Communication",
+"social_structures": "Social Structures and Governance",
+"human_interaction": "Human Interaction and Encountering",
+"human_habitation": "Human Habitation",
+"tradition": "Tradition",
+"science_technology": "Science and Technology",
+"shared_contested": "Shared and Contested Heritage"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa32d666c8",
+"label": "Environment Tags",
+"name": "table_environment",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "environment"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654aa34c666c9",
+"label": "Sub Category",
+"name": "group_environment",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Environment ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "environment"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Geographical": "Geographical",
+"Climate": "Climate",
+"Natural Disasters": "Natural Disasters",
+"Cultural Effects": "Cultural Effects"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa3b9666ca",
+"label": "Subject Tag",
+"name": "tag_geographical",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Environment -> Geographical",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa34c666c9",
+"operator": "==",
+"value": "Geographical"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Ocean": "Ocean",
+"Sea": "Sea",
+"River": "River",
+"Land": "Land",
+"Mountain": "Mountain",
+"Glacier": "Glacier",
+"Arctic": "Arctic",
+"Valley": "Valley",
+"Oasis": "Oasis",
+"Forest": "Forest",
+"Desert": "Desert",
+"Canyon": "Canyon"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa5291d53d",
+"label": "Subject Tag",
+"name": "tag_climate",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Environment -> Climate",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa34c666c9",
+"operator": "==",
+"value": "Climate"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Temperate": "Temperate",
+"Tropic": "Tropic",
+"Humid": "Humid",
+"Desert": "Desert",
+"Polar": "Polar",
+"Arid": "Arid"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa54e1d53e",
+"label": "Subject Tag",
+"name": "tag_culturalEffects",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Environment -> Cultural Effects",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa34c666c9",
+"operator": "==",
+"value": "Cultural Effects"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Population Density": "Population Density",
+"Pollution": "Pollution",
+"Climate change": "Climate change"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654aa67681114",
+"label": "Religious Practices Tags",
+"name": "table_religious",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "religious_practices"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654aa67681115",
+"label": "Sub Category",
+"name": "group_religiousPractices",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "religious_practices"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Spiritualism": "Spiritualism",
+"Mythology": "Mythology",
+"Symbolism": "Symbolism",
+"Sacred Cities": "Sacred Cities",
+"Sacred Landscapes \/ Beings": "Sacred Landscapes \/ Beings",
+"Sacred Places": "Sacred Places",
+"Multi-layered Sanctity": "Multi-layered Sanctity",
+"Belief systems": "Belief systems",
+"Religious Music": "Religious Music",
+"Religious Art": "Religious Art",
+"Religious Conflict": "Religious Conflict",
+"Rites and Ceremonies": "Rites and Ceremonies"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa67681116",
+"label": "Subject Tag",
+"name": "tag_Spirtualism",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Spirtualism",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Spiritualism"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa73e81119",
+"label": "Subject Tag",
+"name": "tag_mythology",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Mythology",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Spiritualism"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa7878111a",
+"label": "Subject Tag",
+"name": "tag_symbolism",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Symbolism",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Symbolism"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa67681117",
+"label": "Subject Tag",
+"name": "tag_sacredCities",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Sacred Cities",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Sacred Cities"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Mecca": "Mecca",
+"Jerusalem": "Jerusalem"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa67681118",
+"label": "Subject Tag",
+"name": "tag_sacredLandscapes",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Sacred Landscapes \/ Beings",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Sacred Landscapes \/ Beings"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Pilgrim’s route": "Pilgrim’s route",
+"Beaches": "Beaches",
+"Trees": "Trees",
+"Rocks": "Rocks"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa7ac8111b",
+"label": "Subject Tag",
+"name": "tag_sacredPlaces",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Sacred Places",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Sacred Places"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Church": "Church",
+"Mosque": "Mosque",
+"Masjid": "Masjid",
+"Synagogue": "Synagogue",
+"Temple": "Temple",
+"Cemetery": "Cemetery",
+"Columbarium": "Columbarium",
+"Chapel": "Chapel",
+"Shrine": "Shrine"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa7da8111c",
+"label": "Subject Tag",
+"name": "tag_multilayeredSanctity",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Multi-layered Sanctity",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Multi-layered Sanctity"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Hagia Sophia": "Hagia Sophia"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa8018111d",
+"label": "Subject Tag",
+"name": "tag_beliefSystems",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Belief Systems",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Belief systems"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Islam": "Islam",
+"Christianism": "Christianism",
+"Judaism": "Judaism",
+"Sufism": "Sufism",
+"Hinduism": "Hinduism",
+"Buddhism": "Buddhism",
+"Shamanism": "Shamanism",
+"Nature worshiping": "Nature worshiping",
+"New age beliefs": "New age beliefs"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654aa8308111e",
+"label": "Subject Tag",
+"name": "tag_religiousMusic",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Religious Practices -> Religious Music",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654aa67681115",
+"operator": "==",
+"value": "Religious Music"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Islamic Music": "Islamic Music",
+"Christian Music": "Christian Music",
+"Jewish Music": "Jewish Music",
+"Buddhist Music": "Buddhist Music",
+"Hindu Music": "Hindu Music",
+"Shamanic music": "Shamanic music",
+"New age music": "New age music"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654b379fb85a8",
+"label": "Trade and Economic Activity Tags",
+"name": "table_trade",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "economic_activities"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654b379fb85a9",
+"label": "Sub Category",
+"name": "group_trade",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "economic_activities"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Trade routes": "Trade routes",
+"Markets": "Markets",
+"Crossroad Cities": "Crossroad Cities",
+"Port cities": "Port cities",
+"Importation & Exportation": "Importation & Exportation",
+"Commercial Activities and Institutions": "Commercial Activities and Institutions",
+"Taxation": "Taxation",
+"Tourism": "Tourism",
+"Skills": "Skills"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b379fb85aa",
+"label": "Subject Tag",
+"name": "tag_tradeRoutes",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Trade Routes",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Trade routes"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Caravansary": "Caravansary",
+"Spice Route": "Spice Route",
+"Silk Road": "Silk Road",
+"Indian Ocean": "Indian Ocean",
+"Navigation": "Navigation"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3a52b85ad",
+"label": "Subject Tag",
+"name": "tag_markets",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Markets",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Markets"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Open Bazaars": "Open Bazaars",
+"Covered Bazaars (souks)": "Covered Bazaars (souks)",
+"Historical Bazaars": "Historical Bazaars",
+"Bakkalas": "Bakkalas"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3a78b85ae",
+"label": "Subject Tag",
+"name": "tag_crossroadCities",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Crossroad Cities",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Crossroad Cities"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Transportation (Caravans etc.)": "Transportation (Caravans etc.)",
+"Caravansaries": "Caravansaries",
+"Cosmopolitanism": "Cosmopolitanism",
+"Culture Amalgamation": "Culture Amalgamation"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3a9eb85af",
+"label": "Subject Tag",
+"name": "tag_portCities",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Port Cities",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Port cities"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Transportation(Dhow etc.)": "Transportation(Dhow etc.)",
+"Cosmopolitanism": "Cosmopolitanism",
+"Culture Amalgamation": "Culture Amalgamation"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3ad2b85b0",
+"label": "Subject Tag",
+"name": "tag_importationExportation",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Importation & Exportation",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Importation & Exportation"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3af3b85b1",
+"label": "Subject Tag",
+"name": "tag_commercialActivitiesAndInstitutions",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Commercial Activities and Institutions",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Commercial Activities and Institutions"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Slavery": "Slavery",
+"Colonialism": "Colonialism",
+"Companies(e.g VOC)": "Companies(e.g VOC)"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3b4cb85b2",
+"label": "Subject Tag",
+"name": "tag_taxation",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Taxation",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Taxation"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3bb5b85b3",
+"label": "Subject Tag",
+"name": "tag_tourism",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Tourism",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Tourism"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Cultural tourism": "Cultural tourism",
+"Mass tourism": "Mass tourism",
+"Business tourism": "Business tourism",
+"Dark Heritage tourism": "Dark Heritage tourism"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3bcfb85b4",
+"label": "Subject Tag",
+"name": "tag_skills",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Trade and Economic Activity -> Skills",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b379fb85a9",
+"operator": "==",
+"value": "Skills"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Fishing": "Fishing",
+"Pearling": "Pearling",
+"Agriculture": "Agriculture",
+"Mining": "Mining",
+"Water management": "Water management",
+"Shipbuilding": "Shipbuilding",
+"Artisanship": "Artisanship"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654b3cf6d7da9",
+"label": "Arts and Communication",
+"name": "table_artsAndCommunications",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "arts_communication"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654b3cf6d7daa",
+"label": "Sub Category",
+"name": "group_artsAndCommunication",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Arts & Communication ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "arts_communication"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Performing Arts": "Performing Arts",
+"Media Arts": "Media Arts",
+"Visual Arts": "Visual Arts",
+"Literary Arts": "Literary Arts",
+"Cultural \/ Social Communication": "Cultural \/ Social Communication"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3cf6d7dab",
+"label": "Subject Tag",
+"name": "tag_performingArts",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Arts & Communication -> Performing Arts",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b3cf6d7daa",
+"operator": "==",
+"value": "Performing Arts"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Theater": "Theater",
+"Opera": "Opera",
+"Dance": "Dance",
+"Music": "Music"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3f4cd7daf",
+"label": "Subject Tag",
+"name": "tag_mediaArts",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Arts & Communication -> Media Arts",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b3cf6d7daa",
+"operator": "==",
+"value": "Media Arts"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Installation Art": "Installation Art",
+"Film": "Film",
+"Computer \/ Digital Art (e.g. AI, VR, 3D)": "Computer \/ Digital Art (e.g. AI, VR, 3D)"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3f6dd7db0",
+"label": "Subject Tag",
+"name": "tag_visualArts",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Arts & Communication -> Visual Arts",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b3cf6d7daa",
+"operator": "==",
+"value": "Visual Arts"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Painting": "Painting",
+"Sculpture": "Sculpture",
+"Masks": "Masks",
+"Crafts": "Crafts"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b3fc1d7db1",
+"label": "Subject Tag",
+"name": "tag_literaryArts",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Arts & Communication -> Literary Arts",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b3cf6d7daa",
+"operator": "==",
+"value": "Literary Arts"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Fiction": "Fiction",
+"Poetry": "Poetry",
+"Novel": "Novel"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654b4051d7db2",
+"label": "Subject Tag",
+"name": "tag_culturalAndSocialCommunication",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Arts & Communication -> Cultural \/ Social Communication",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654b3cf6d7daa",
+"operator": "==",
+"value": "Cultural \/ Social Communication"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Narratives": "Narratives",
+"Storytelling": "Storytelling",
+"Oral history": "Oral history",
+"Proverbs": "Proverbs",
+"Rhetoric": "Rhetoric",
+"Poetry": "Poetry",
+"Quotes": "Quotes",
+"Literature": "Literature",
+"Museum": "Museum",
+"Exhibitions": "Exhibitions",
+"Media": "Media",
+"Presentation": "Presentation",
+"Travel": "Travel",
+"Rites and ceremonies": "Rites and ceremonies"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654f3d0d0e8b4",
+"label": "Social Structures and Governance",
+"name": "table_socialStructuresAndGovernance",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "social_structures"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654f3d0d0e8b5",
+"label": "Sub Category",
+"name": "group_socialStructuresAndGovernance",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "social_structures"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Social Structures": "Social Structures",
+"Socio-political Communities": "Socio-political Communities",
+"Governance": "Governance",
+"Living Societies": "Living Societies",
+"Disappeared Societies": "Disappeared Societies",
+"Past Societies": "Past Societies"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3d0d0e8b6",
+"label": "Subject Tag",
+"name": "tag_socialStructures",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance -> Social Structures",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3d0d0e8b5",
+"operator": "==",
+"value": "Social Structures"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Status": "Status",
+"Religion": "Religion",
+"Age": "Age",
+"Ethnicity": "Ethnicity",
+"Class": "Class",
+"Gender": "Gender",
+"Slavery": "Slavery",
+"Discrimination": "Discrimination",
+"Family": "Family",
+"Household": "Household",
+"Neighbors": "Neighbors",
+"Community": "Community",
+"Citizenship": "Citizenship",
+"Outsiders": "Outsiders",
+"Patriarchy": "Patriarchy",
+"Matriarchy": "Matriarchy"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3dc5cba65",
+"label": "Subject Tag",
+"name": "tag_sociopoliticalCommunities",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance -> Socio-political Communities",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3d0d0e8b5",
+"operator": "==",
+"value": "Socio-political communities"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Majorities": "Majorities",
+"Minorities": "Minorities",
+"Discriminated people": "Discriminated people"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3dfdcba66",
+"label": "Subject Tag",
+"name": "tag_governance",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance -> Governance",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3d0d0e8b5",
+"operator": "==",
+"value": "Governance"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Monarchy": "Monarchy",
+"Democracy": "Democracy",
+"Dictatorship": "Dictatorship",
+"Tribal authority": "Tribal authority",
+"Sheikhdom": "Sheikhdom",
+"Shariah": "Shariah",
+"Secular": "Secular"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3e39cba67",
+"label": "Subject Tag",
+"name": "tag_livingSocieties",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance -> Living Societies",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3d0d0e8b5",
+"operator": "==",
+"value": "Living Societies"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3e5df4532",
+"label": "Subject Tag",
+"name": "tag_disappearedSocieties",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance -> Disappeared Societies",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3d0d0e8b5",
+"operator": "==",
+"value": "Disappeared Societies"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3e75f4533",
+"label": "Subject Tag",
+"name": "tag_pastSocieties",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Social Structures and Governance -> Past Societies",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3d0d0e8b5",
+"operator": "==",
+"value": "Past Societies"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"N\/A": "N\/A"
+},
+"allow_custom": 1,
+"save_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654f3eef82b19",
+"label": "Human Interaction and Encountering",
+"name": "table_humanInteractionAndEncountering",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "human_interaction"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654f3eef82b1a",
+"label": "Sub Category",
+"name": "group_humanInteractionAndEncountering",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Interaction and Encountering ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "human_interaction"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Mobility": "Mobility",
+"Cultural Amalgamation": "Cultural Amalgamation"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3eef82b1b",
+"label": "Subject Tag",
+"name": "tag_mobility",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Interaction and Encountering -> Mobility",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3eef82b1a",
+"operator": "==",
+"value": "Mobility"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Expedition": "Expedition",
+"Tourism": "Tourism",
+"Education": "Education",
+"Trade": "Trade",
+"Migration": "Migration",
+"Immigration": "Immigration",
+"Displacement": "Displacement",
+"Colonization": "Colonization",
+"Exile": "Exile",
+"Slavery": "Slavery"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f3fbb82b21",
+"label": "Subject Tag",
+"name": "tag_culturalAmalgamation",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Interaction and Encountering -> Cultural Amalgamation",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f3eef82b1a",
+"operator": "==",
+"value": "Cultural Amalgamation"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Cosmopolitanism": "Cosmopolitanism",
+"Multi-culturality": "Multi-culturality"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654f44031cc66",
+"label": "Human Habitation",
+"name": "table_humanHabitation",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "human_habitation"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654f44031cc67",
+"label": "Sub Category",
+"name": "group_humanHabitation",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "human_habitation"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Past \/ Ancient Settlements": "Past \/ Ancient Settlements",
+"Modern \/ Contemporary Settlements": "Modern \/ Contemporary Settlements",
+"Continuous Settlements": "Continuous Settlements",
+"Settlement Elements": "Settlement Elements"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f44031cc68",
+"label": "Subject Tag",
+"name": "tag_pastAncientSettlements",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Past \/ Ancient Settlements",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f44031cc67",
+"operator": "==",
+"value": "Past \/ Ancient Settlements"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Preliterate Period": "Preliterate Period",
+"Bronze Age": "Bronze Age",
+"Iron Age": "Iron Age",
+"Medieval": "Medieval",
+"Religious buildings": "Religious buildings",
+"Administrative buildings": "Administrative buildings",
+"Historical buildings": "Historical buildings",
+"Ruins": "Ruins",
+"World heritage site": "World heritage site"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f44941cc6a",
+"label": "Subject Tag",
+"name": "tag_modernContemporarySettlements",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Modern \/ Contemporary Settlements",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f44031cc67",
+"operator": "==",
+"value": "Modern \/ Contemporary Settlements"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Villages": "Villages",
+"Towns": "Towns",
+"Cities": "Cities",
+"Mega-cities": "Mega-cities",
+"Ruins": "Ruins",
+"Suburbs": "Suburbs",
+"Ghettos": "Ghettos",
+"Gentrificated Districts": "Gentrificated Districts"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f44d81cc6b",
+"label": "Subject Tag",
+"name": "tag_continuousSettlements",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Continuous Settlements",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f44031cc67",
+"operator": "==",
+"value": "Continuous Settlements"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Living heritage site": "Living heritage site",
+"World heritage site": "World heritage site",
+"Old towns of the cities": "Old towns of the cities"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f452a1cc6c",
+"label": "Subject Tag",
+"name": "tag_settlementElements",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Settlement Elements",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f44031cc67",
+"operator": "==",
+"value": "Settlement Elements"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Palaces": "Palaces",
+"Monuments": "Monuments",
+"Residential Buildings": "Residential Buildings",
+"Administrative Buildings": "Administrative Buildings",
+"Plaza, square": "Plaza, square",
+"Graveyards": "Graveyards",
+"Neighborhoods": "Neighborhoods",
+"Ghetto": "Ghetto",
+"Ethnic clusters": "Ethnic clusters",
+"Central \/ suburb": "Central \/ suburb",
+"Slum \/ squatted spaces": "Slum \/ squatted spaces"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654f459c81243",
+"label": "Tradition",
+"name": "table_tradition",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "tradition"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654f459c81244",
+"label": "Sub Category",
+"name": "group_tradition",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Tradition ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "tradition"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Traditional Knowledge": "Traditional Knowledge",
+"Traditional Food and Beverage": "Traditional Food and Beverage",
+"Traditional Healing": "Traditional Healing",
+"Traditions Under Threat": "Traditions Under Threat"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f459c81245",
+"label": "Subject Tag",
+"name": "tag_traditionalKnowledge",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Traditional Knowledge",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f459c81244",
+"operator": "==",
+"value": "Traditional Knowledge"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Oral Traditions": "Oral Traditions",
+"Traditional Training": "Traditional Training",
+"Traditional Agriculture": "Traditional Agriculture",
+"Traditional Art": "Traditional Art",
+"Vernacular Architecture": "Vernacular Architecture",
+"Shipbuilding": "Shipbuilding"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f461581249",
+"label": "Subject Tag",
+"name": "tag_traditionalFoodAndBeverage",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Traditional Food and Beverage",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f459c81244",
+"operator": "==",
+"value": "Traditional Food and Beverage"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Winemaking": "Winemaking",
+"Olive Oil Process": "Olive Oil Process",
+"Bread making": "Bread making",
+"Ceremonial Feasts": "Ceremonial Feasts",
+"Festival Feasts": "Festival Feasts",
+"Funeral Feasts": "Funeral Feasts",
+"Circumcise Feasts": "Circumcise Feasts",
+"Religious Feasts (iftar)": "Religious Feasts (iftar)",
+"Treating neighbor with food": "Treating neighbor with food",
+"Welcoming stranger": "Welcoming stranger",
+"Sacrification": "Sacrification",
+"Fruit offering": "Fruit offering"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f465f8124a",
+"label": "Subject Tag",
+"name": "tag_traditionalHealing",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Traditional Healing",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f459c81244",
+"operator": "==",
+"value": "Traditional Healing"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Devil Dances": "Devil Dances",
+"Masks": "Masks",
+"Ayurvedic": "Ayurvedic",
+"Religious Healing": "Religious Healing"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f46798124b",
+"label": "Subject Tag",
+"name": "tag_traditionsUnderThreat",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Human Habitation -> Traditions Under Threat",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f459c81244",
+"operator": "==",
+"value": "Traditions under Threat"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Cultural loses": "Cultural loses",
+"Woman rights": "Woman rights",
+"Marriage tradition": "Marriage tradition"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_654f470964758",
+"label": "Science and Technology",
+"name": "table_scienceAndTechnology",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "science_technology"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_654f470964759",
+"label": "Sub Category",
+"name": "group_scienceAndTechnology",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Science and Technology ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "science_technology"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Science": "Science",
+"Technology": "Technology"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f47096475a",
+"label": "Subject Tag",
+"name": "tag_science",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Science and Technology -> Science",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f470964759",
+"operator": "==",
+"value": "Science"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Medicine": "Medicine",
+"Maps \/ Mapping": "Maps \/ Mapping",
+"Conservation": "Conservation",
+"Mineralogy": "Mineralogy"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_654f49946475e",
+"label": "Subject Tag",
+"name": "tag_technology",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Science and Technology -> Technology",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654f470964759",
+"operator": "==",
+"value": "Technology"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Pyrotechnology": "Pyrotechnology",
+"Architecture": "Architecture",
+"Shipbuilding": "Shipbuilding",
+"Automobile": "Automobile",
+"Navigation": "Navigation",
+"Agriculture tools": "Agriculture tools",
+"Hunting tools": "Hunting tools",
+"Pearl diving tools": "Pearl diving tools",
+"Communication tools": "Communication tools"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+{
+"key": "field_655bbab5e3444",
+"label": "Shared and Contested Heritage",
+"name": "table_sharedAndContestedHeritage",
+"aria-label": "",
+"type": "group",
+"instructions": "",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "shared_contested"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"layout": "table",
+"sub_fields": [
+{
+"key": "field_655bbab5e3445",
+"label": "Sub Category",
+"name": "group_sharedAndContestedHeritage",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Shared and Contested Heritage ->",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_654a989ba105b",
+"operator": "==",
+"value": "shared_contested"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Memory and Identity": "Memory and Identity",
+"Heritage Preservation": "Heritage Preservation"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_655bbab5e3446",
+"label": "Subject Tag",
+"name": "tag_memoryAndIdentity",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Shared and Contested Heritage -> Memory and Identity",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_655bbab5e3445",
+"operator": "==",
+"value": "Memory and Identity"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Resistance": "Resistance",
+"Conflict": "Conflict",
+"Wars": "Wars",
+"Indigenous peoples": "Indigenous peoples",
+"Identity": "Identity",
+"Memory politics": "Memory politics",
+"Revolution": "Revolution",
+"Colonization": "Colonization",
+"Decolonization": "Decolonization",
+"Reconciliation": "Reconciliation"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+},
+{
+"key": "field_655bbb5ee3448",
+"label": "Subject Tag",
+"name": "tag_heritagePreservation",
+"aria-label": "",
+"type": "checkbox",
+"instructions": "Shared and Contested Heritage -> Heritage Preservation",
+"required": 1,
+"conditional_logic": [
+[
+{
+"field": "field_655bbab5e3445",
+"operator": "==",
+"value": "Heritage Preservation"
+}
+]
+],
+"wrapper": {
+"width": "",
+"class": "",
+"id": ""
+},
+"choices": {
+"Heritage Management": "Heritage Management",
+"Heritage Tourism": "Heritage Tourism",
+"Heritage Diplomacy": "Heritage Diplomacy",
+"Heritage Ownership": "Heritage Ownership"
+},
+"allow_custom": 0,
+"default_value": [],
+"layout": "horizontal",
+"toggle": 0,
+"return_format": "value",
+"save_custom": 0,
+"custom_choice_button_text": "Add new choice"
+}
+]
+},
+ -->
+
+
+
+
+<!--  TAGGING LIST ENDS HERE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="">
+
+    <div class="hamburguer-menu" onclick="toggle(this)">
+        <span class="line first-line"></span>
+        <span class="line second-line"></span>
+    </div>
+    <!--   <div class="menu-expanded">
+    <ul>
+      <li><a href="#">Environment</a></li>
+		<li><a href="#">Religious practices</a></li>
+		<li><a href="#">Trade and economic activity</a></li>
+		<li><a href="#">Social structures and governance </a></li>
+		<li><a href="#">Human interaction and encountering </a></li>
+		<li><a href="#">Human habitation </a></li>
+		<li><a href="#">Tradition</a></li>
+		<li><a href="#">Science and technology</a></li>
+		<li><a href="#">Shared and contested heritage</a></li>
+    </ul>
+  </div> -->
+
+    <!-- CREATE MENU FROM TAGGING LIST -->
+    <div class="menu-expanded">
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Environment</label>
+                <ul class="submenu-tag">
+                    <li>
+                        <input type="checkbox" id="sub-Menu" class="topic-toggle">
+                        <label for="sub-Menu" class="submenu-label"
+                            data-submenu-id="geographical-submenu">Geographical</label>
+                        <ul class="submenu-tag submenu" id="geographical-submenu">
+                            <li>
+                                <input type="checkbox" id="subsub-Menu" class="topic-toggle">
+                                <label for="subsub-Menu">Ocean</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="seasub-Menu" class="topic-toggle">
+                                <label for="seasub-Menu">Sea Water</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="riversub-Menu" class="topic-toggle">
+                                <label for="riversub-Menu">River</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="landsub-Menu" class="topic-toggle">
+                                <label for="landsub-Menu">Land</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="mountainsub-Menu" class="topic-toggle">
+                                <label for="mountainsub-Menu">Mountain</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="glaciersub-Menu" class="topic-toggle">
+                                <label for="glaciersub-Menu">Glacier</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="arcticsub-Menu" class="topic-toggle">
+                                <label for="arcticsub-Menu">Arctic</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="valleysub-Menu" class="topic-toggle">
+                                <label for="valleysub-Menu">Valley</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="oasissub-Menu" class="topic-toggle">
+                                <label for="oasissub-Menu">Oasis</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="forestsub-Menu" class="topic-toggle">
+                                <label for="forestsub-Menu">Forest</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="desertsub-Menu" class="topic-toggle">
+                                <label for="desertsub-Menu">Desert</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="canyonsub-Menu" class="topic-toggle">
+                                <label for="canyonsub-Menu">Canyon</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="sub-Menu2" class="topic-toggle">
+                        <label for="sub-Menu2" class="submenu-label">Climate</label>
+                        <ul class="submenu-tag submenu">
+                            <li>
+                                <input type="checkbox" id="subsub-Menu2" class="topic-toggle">
+                                <label for="subsub-Menu2">Temperate</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="seasub-Menu2" class="topic-toggle">
+                                <label for="seasub-Menu2">Tropic</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="riversub-Menu2" class="topic-toggle">
+                                <label for="riversub-Menu2">Humid</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="landsub-Menu2" class="topic-toggle">
+                                <label for="landsub-Menu2">Desert</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="mountainsub-Menu2" class="topic-toggle">
+                                <label for="mountainsub-Menu2">Polar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="glaciersub-Menu2" class="topic-toggle">
+                                <label for="glaciersub-Menu2">Arid</label>
+                            </li>
+                        </ul>
+                        <!-- More submenu items... -->
+                    </li>
+
+                    <!-- NATURAL DISASTER SUBMENU -->
+
+                    <li>
+                        <input type="checkbox" id="sub-Menu3" class="topic-toggle">
+                        <label for="sub-Menu3" class="submenu-label">Natural Disasters</label>
+                    </li>
+
+                    <!-- Cultural heritage SUBMENU subsubmenu listed below -->
+                    <li>
+                        <input type="checkbox" id="sub-Menu4" class="topic-toggle">
+                        <label for="sub-Menu4" class="submenu-label">Cultural Effects</label>
+                        <ul class="submenu-tag submenu">
+                            <li>
+                                <input type="checkbox" id="subsub-Menu4" class="topic-toggle">
+                                <label for="subsub-Menu4">Population Density</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="seasub-Menu4" class="topic-toggle">
+                                <label for="seasub-Menu4">Pollution</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="riversub-Menu4" class="topic-toggle">
+                                <label for="riversub-Menu4">Climate change</label>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Trade and economic activity</label>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Arts and communication</label>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Social structures and governance</label>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Human interaction and encountering</label>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Human habitation</label>
+
+            </li>
+
+        </ul>   
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Tradition</label>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Science and technology</label>
+
+            </li>
+        </ul>   
+
+        <ul>
+            <li>
+                <input type="checkbox" id="topic-Menu" class="topic-toggle">
+                <label for="topic-Menu">Shared and contested heritage</label>
+
+            </li>
+        </ul>
+        
+
+
+        <button id="explore-btn" class="explore-btn">Explore Now</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <div id="map"></div>
+    </div>
+    <!-- SEARCH button -->
+    <button id="search-btn" class="search-btn"
+        onclick="toggle(document.querySelector('.hamburguer-menu'))">SEARCH</button>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster-src.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster-src.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
+
+<?php get_footer(); ?>
