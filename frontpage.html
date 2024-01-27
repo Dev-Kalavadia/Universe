@@ -36,27 +36,25 @@
                         <input type="checkbox" id="geographical-menu" class="topic-toggle">
                         <label for="geographical-menu" data-submenu-id="geographical-submenu">Geographical</label>
                         <ul class="submenu-tag submenu" id="geographical-submenu">
-                            <li><input class="topic-toggle" type="checkbox" id="ocean-tag"><label for="ocean-tag">Ocean</label></li>
-                            <li><input class="topic-toggle" type="checkbox" id="sea-tag"><label for="sea-tag">Sea</label></li>
-                            <li><input class="topic-toggle" type="checkbox" id="river-tag"><label for="river-tag">River</label></li>
-                            <li><input class="topic-toggle" type="checkbox" id="land-tag"><label for="land-tag">Land</label></li>
-                            <!-- Repeat for Mountain, Glacier, Arctic, Valley, Oasis, Forest, Desert, Canyon -->
-                            <!-- Mountain -->
-                            <li><input class="topic-toggle" type="checkbox" id="mountain-tag"><label for="mountain-tag">Mountain</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="ocean-tag"><label for="ocean-tag">Ocean</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="sea-tag"><label for="sea-tag">Sea</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="river-tag"><label for="river-tag">River</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="land-tag"><label for="land-tag">Land</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="mountain-tag"><label for="mountain-tag">Mountain</label></li>
                             <!-- Glacier -->
-                            <li><input class="topic-toggle" type="checkbox" id="glacier-tag"><label for="glacier-tag">Glacier</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="glacier-tag"><label for="glacier-tag">Glacier</label></li>
                             <!-- Arctic -->
-                            <li><input class="topic-toggle" type="checkbox" id="arctic-tag"><label for="arctic-tag">Arctic</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="arctic-tag"><label for="arctic-tag">Arctic</label></li>
                             <!-- Valley -->
-                            <li><input class="topic-toggle" type="checkbox" id="valley-tag"><label for="valley-tag">Valley</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="valley-tag"><label for="valley-tag">Valley</label></li>
                             <!-- Oasis -->
-                            <li><input class="topic-toggle" type="checkbox" id="oasis-tag"><label for="oasis-tag">Oasis</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="oasis-tag"><label for="oasis-tag">Oasis</label></li>
                             <!-- Forest -->
-                            <li><input class="topic-toggle" type="checkbox" id="forest-tag"><label for="forest-tag">Forest</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="forest-tag"><label for="forest-tag">Forest</label></li>
                             <!-- Desert -->
-                            <li><input class="topic-toggle" type="checkbox" id="desert-tag"><label for="desert-tag">Desert</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="desert-tag"><label for="desert-tag">Desert</label></li>
                             <!-- Canyon -->
-                            <li><input class="topic-toggle" type="checkbox" id="canyon-tag"><label for="canyon-tag">Canyon</label></li>
+                            <li class="end-of-branch"><input class="topic-toggle" type="checkbox" id="canyon-tag"><label for="canyon-tag">Canyon</label></li>
                         </ul>
                     </li>
                     <!-- Climate -->
@@ -67,44 +65,37 @@
                             <!-- Climate tags will be listed here -->
                             <!-- Insert checkboxes for Climate tags such as Temperate, Tropic, Humid, Arid, Polar, Desert -->
                             <!-- Insert checkboxes for Climate tags such as Temperate, Tropic, Humid, Arid, Polar, Desert -->
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="temperate-tag">
                                 <label for="temperate-tag">Temperate</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="tropic-tag">
                                 <label for="tropic-tag">Tropic</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="humid-tag">
                                 <label for="humid-tag">Humid</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="arid-tag">
                                 <label for="arid-tag">Arid</label>
+                            </li class="end-of-branch">
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="polar-climate-tag">
+                                <label for="polar-climate-tag">Polar</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="polar-tag">
-                                <label for="polar-tag">Polar</label>
-                            </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="desert-tag">
-                                <label for="desert-tag">Desert</label>
+                            <li class="end-of-branch"> 
+                                <input class="topic-toggle" type="checkbox" id="desert-climate-tag">
+                                <label for="desert-climate-tag">Desert</label>
                             </li>
 
                         </ul>
                     </li>
                     <!-- Natural Disasters -->
-                    <li>
+                    <li class="end-of-branch">
                         <input type="checkbox" id="natural-disasters-menu" class="topic-toggle">
                         <label for="natural-disasters-menu" data-submenu-id="natural-disasters-submenu">Natural Disasters</label>
-                        <ul class="submenu-tag submenu" id="natural-disasters-submenu">
-                            <!-- Natural Disasters tags will be listed here -->
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="temperate-tag">
-                                <label for="temperate-tag">Temperate</label>
-                            </li>
-                        </ul>
                     </li>
                     <!-- Cultural Effects -->
                     <li>
@@ -113,15 +104,15 @@
                         <ul class="submenu-tag submenu" id="cultural-effects-submenu">
                         <!-- Cultural Effects -->
                         
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="population-density-tag">
                                     <label for="population-density-tag">Population Density</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="pollution-tag">
                                     <label for="pollution-tag">Pollution</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="climate-change-tag">
                                     <label for="climate-change-tag">Climate Change</label>
                                 </li>
@@ -139,15 +130,15 @@
                 <label for="religious-practices-menu">Religious Practices</label>
                 <ul class="submenu-tag submenu" id="religious-practices-submenu">
                     <!-- Religious Practices tags will be listed here -->
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="spiritualism-tag">
                         <label for="spiritualism-tag">Spiritualism</label>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="mythology-tag">
                         <label for="mythology-tag">Mythology</label>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="symbolism-tag">
                         <label for="symbolism-tag">Symbolism</label>
                     </li>
@@ -156,11 +147,11 @@
                         <label for="sacred-cities-tag">Sacred Cities</label>
                         <!-- add submenu mecca and jerusalem-->
                         <ul class="submenu-tag submenu" id="sacred-cities-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="mecca-tag">
                                 <label for="mecca-tag">Mecca</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="jerusalem-tag">
                                 <label for="jerusalem-tag">Jerusalem</label>
                             </li>
@@ -171,19 +162,19 @@
                         <label for="sacred-landscapes-beings-tag">Sacred Landscapes / Beings</label>
                          <!-- add submenu  Pilgrim’s route Beaches Trees Rocks-->
                             <ul class="submenu-tag submenu" id="sacred-landscapes-beings-submenu">
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="pilgrims-route-tag">
                                     <label for="pilgrims-route-tag">Pilgrim’s route</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="beaches-tag">
                                     <label for="beaches-tag">Beaches</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="trees-tag">
                                     <label for="trees-tag">Trees</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="rocks-tag">
                                     <label for="rocks-tag">Rocks</label>
                                 </li>
@@ -194,39 +185,39 @@
                         <label for="sacred-places-tag">Sacred Places</label>
                         <!-- add sub menu  Church Mosque Masjid Synagogue Temple Cemetery Columbarium Chapel Shrine-->
                         <ul class="submenu-tag submenu" id="sacred-places-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="church-tag">
                                 <label for="church-tag">Church</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="mosque-tag">
                                 <label for="mosque-tag">Mosque</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="masjid-tag">
                                 <label for="masjid-tag">Masjid</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="synagogue-tag">
                                 <label for="synagogue-tag">Synagogue</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="temple-tag">
                                 <label for="temple-tag">Temple</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="cemetery-tag">
                                 <label for="cemetery-tag">Cemetery</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="columbarium-tag">
                                 <label for="columbarium-tag">Columbarium</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="chapel-tag">
                                 <label for="chapel-tag">Chapel</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="shrine-tag">
                                 <label for="shrine-tag">Shrine</label>
                             </li>
@@ -239,7 +230,7 @@
                         <label for="multi-layered-sanctity-tag">Multi-layered Sanctity</label>
                         <!-- add sub menu Hagia Sophia-->
                         <ul class="submenu-tag submenu" id="multi-layered-sanctity-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="hagia-sophia-tag">
                                 <label for="hagia-sophia-tag">Hagia Sophia</label>
                             </li>
@@ -250,39 +241,39 @@
                         <label for="belief-systems-tag">Belief Systems</label>
                         <!-- add sub menu   Islam Christianism Judaism Sufism Hinduism Buddhism Shamanism Nature worshiping New age beliefs-->
                         <ul class="submenu-tag submenu" id="belief-systems-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="islam-tag">
                                 <label for="islam-tag">Islam</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="christianism-tag">
                                 <label for="christianism-tag">Christianism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="judaism-tag">
                                 <label for="judaism-tag">Judaism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="sufism-tag">
                                 <label for="sufism-tag">Sufism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="hinduism-tag">
                                 <label for="hinduism-tag">Hinduism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="buddhism-tag">
                                 <label for="buddhism-tag">Buddhism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="shamanism-tag">
                                 <label for="shamanism-tag">Shamanism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="nature-worshiping-tag">
                                 <label for="nature-worshiping-tag">Nature worshiping</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="new-age-beliefs-tag">
                                 <label for="new-age-beliefs-tag">New age beliefs</label>
                             </li>
@@ -293,45 +284,45 @@
                         <label for="religious-music-tag">Religious Music</label>
                         <!-- add sub menu  Islamic Music Christian Music Jewish Music Buddhist Music Hindu Music Shamanic music New age music-->
                         <ul class="submenu-tag submenu" id="religious-music-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="islamic-music-tag">
                                 <label for="islamic-music-tag">Islamic Music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="christian-music-tag">
                                 <label for="christian-music-tag">Christian Music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="jewish-music-tag">
                                 <label for="jewish-music-tag">Jewish Music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="buddhist-music-tag">
                                 <label for="buddhist-music-tag">Buddhist Music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="hindu-music-tag">
                                 <label for="hindu-music-tag">Hindu Music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="shamanic-music-tag">
                                 <label for="shamanic-music-tag">Shamanic music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="new-age-music-tag">
                                 <label for="new-age-music-tag">New age music</label>
                             </li>
                         </ul>    
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="religious-art-tag">
                         <label for="religious-art-tag">Religious Art</label>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="religious-conflict-tag">
                         <label for="religious-conflict-tag">Religious Conflict</label>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="rites-ceremonies-tag">
                         <label for="rites-ceremonies-tag">Rites and Ceremonies</label>
                     </li>
@@ -352,23 +343,23 @@
                         <label for="trade-routes-tag">Trade routes</label>
                         <!-- add sub menu Caravansary Spice Route Silk Road Indian Ocean Navigation-->
                         <ul class="submenu-tag submenu" id="trade-routes-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="caravansary-tag">
                                 <label for="caravansary-tag">Caravansary</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="spice-route-tag">
                                 <label for="spice-route-tag">Spice Route</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="silk-road-tag">
                                 <label for="silk-road-tag">Silk Road</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="indian-ocean-tag">
                                 <label for="indian-ocean-tag">Indian Ocean</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="navigation-tag">
                                 <label for="navigation-tag">Navigation</label>
                             </li>
@@ -379,19 +370,19 @@
                         <label for="markets-tag">Markets</label>
                         <!-- add submenu Open Bazaars Covered Bazaars (souks) Historical Bazaars Bakkalas-->
                         <ul class="submenu-tag submenu" id="markets-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="open-bazaars-tag">
                                 <label for="open-bazaars-tag">Open Bazaars</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="covered-bazaars-tag">
                                 <label for="covered-bazaars-tag">Covered Bazaars (souks)</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="historical-bazaars-tag">
                                 <label for="historical-bazaars-tag">Historical Bazaars</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="bakkalas-tag">
                                 <label for="bakkalas-tag">Bakkalas</label>
                             </li>
@@ -402,19 +393,19 @@
                         <label for="crossroad-cities-tag">Crossroad Cities</label>
                         <!-- add submenu Transportation (Caravans etc.) Caravansaries Cosmopolitanism Culture Amalgamation-->
                         <ul class="submenu-tag submenu" id="crossroad-cities-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="transportation-tag">
                                 <label for="transportation-tag">Transportation (Caravans etc.)</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="caravansaries-tag">
                                 <label for="caravansaries-tag">Caravansaries</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="cosmopolitanism-tag">
                                 <label for="cosmopolitanism-tag">Cosmopolitanism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="culture-amalgamation-tag">
                                 <label for="culture-amalgamation-tag">Culture Amalgamation</label>
                             </li>
@@ -425,21 +416,21 @@
                         <label for="port-cities-tag">Port cities</label>
                         <!-- add submenu Transportation(Dhow etc.) Cosmopolitanism Culture Amalgamation-->
                         <ul class="submenu-tag submenu" id="port-cities-submenu">
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="transportation-tag">
-                                <label for="transportation-tag">Transportation(Dhow etc.)</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="transportation-dhow-tag">
+                                <label for="transportation-dhow-tag">Transportation(Dhow etc.)</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="cosmopolitanism-tag">
-                                <label for="cosmopolitanism-tag">Cosmopolitanism</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="cosmopolitan-tag">
+                                <label for="cosmopolitan-tag">Cosmopolitan</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="culture-amalgamation-tag">
-                                <label for="culture-amalgamation-tag">Culture Amalgamation</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="cultural-amalgamation-tag">
+                                <label for="cultural-amalgamation-tag">Cultural Amalgamation</label>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="importation-exportation-tag">
                         <label for="importation-exportation-tag">Importation & Exportation</label>
                     </li>
@@ -448,16 +439,16 @@
                         <label for="commercial-activities-institutions-tag">Commercial Activities and Institutions</label>
                         <!-- add submenu Colonialism Companies(e.g VOC)-->
                         <ul class="submenu-tag submenu" id="commercial-activities-institutions-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="colonialism-tag">
                                 <label for="colonialism-tag">Slavery</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="colonialism-tag">
-                                <label for="colonialism-tag">Colonialism Companies(e.g VOC)</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="colonialism-companies-tag">
+                                <label for="colonialism-companies-tag">Colonialism Companies(e.g VOC)</label>
                             </li>
                         </ul>    
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="taxation-tag">
                         <label for="taxation-tag">Taxation</label>
                     </li>
@@ -467,19 +458,19 @@
                         <!-- add submenu  Cultural tourism Mass tourism Business tourism Dark Heritage tourism-->
                         <!-- add submenu  Cultural tourism Mass tourism Business tourism Dark Heritage tourism-->
                         <ul class="submenu-tag submenu" id="tourism-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="cultural-tourism-tag">
                                 <label for="cultural-tourism-tag">Cultural tourism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="mass-tourism-tag">
                                 <label for="mass-tourism-tag">Mass tourism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="business-tourism-tag">
                                 <label for="business-tourism-tag">Business tourism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="dark-heritage-tourism-tag">
                                 <label for="dark-heritage-tourism-tag">Dark Heritage tourism</label>
                             </li>
@@ -490,37 +481,37 @@
                         <label for="skills-tag">Skills</label>
                         <!-- add submenu  Fishing Pearling Agriculture Mining Water management Shipbuilding Artisanship-->
                         <ul class="submenu-tag submenu" id="skills-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="fishing-tag">
                                 <label for="fishing-tag">Fishing</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="pearling-tag">
                                 <label for="pearling-tag">Pearling</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="agriculture-tag">
                                 <label for="agriculture-tag">Agriculture</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="mining-tag">
                                 <label for="mining-tag">Mining</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="water-management-tag">
                                 <label for="water-management-tag">Water management</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="shipbuilding-tag">
                                 <label for="shipbuilding-tag">Shipbuilding</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="artisanship-tag">
                                 <label for="artisanship-tag">Artisanship</label>
                             </li>
                         </ul>
                     </li>
-                    </li>
+                </li>
             </li>
         </ul>
     </ul>
@@ -536,19 +527,19 @@
                         <input class="topic-toggle" type="checkbox" id="performing-arts-tag">
                         <label for="performing-arts-tag">Performing Arts</label>
                         <ul class="submenu-tag submenu" id="performing-arts-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="music-tag">
                                 <label for="music-tag">Music</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="dance-tag">
                                 <label for="dance-tag">Dance</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="theatre-tag">
                                 <label for="theatre-tag">Theatre</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="opera-tag">
                                 <label for="opera-tag">Opera</label>
                             </li>    
@@ -559,15 +550,15 @@
                         <label for="media-arts-tag">Media Arts</label>
                         <!-- add sub menu  Photography Film-->
                         <ul class="submenu-tag submenu" id="media-arts-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="installation-art-tag">
                                 <label for="installation-art-tag">Installation Art</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="film-tag">
                                 <label for="film-tag">Film</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="digital-art-tag">
                                 <label for="digital-art-tag">Computer / Digital Art (e.g. AI, VR, 3D)</label>
                             </li>
@@ -578,19 +569,19 @@
                         <label for="visual-arts-tag">Visual Arts</label>
                         <!-- add sub menu  Painting Sculpture-->
                         <ul class="submenu-tag submenu" id="visual-arts-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="painting-tag">
                                 <label for="painting-tag">Painting</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="sculpture-tag">
                                 <label for="sculpture-tag">Sculpt</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="masks-tag">
                                 <label for="masks-tag">Masks</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="crafts-tag">
                                 <label for="crafts-tag">Crafts</label>
                             </li>
@@ -602,15 +593,15 @@
                         <label for="literary-arts-tag">Literary Arts</label>
                         <!-- add sub menu  Poetry Prose-->
                         <ul class="submenu-tag submenu" id="literary-arts-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="poetry-tag">
                                 <label for="poetry-tag">Poetry</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="novel-tag">
                                 <label for="novel-tag">Novel</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="fiction-tag">
                                 <label for="fiction-tag">Fiction</label>
                             </li>
@@ -623,56 +614,55 @@
                             <!-- add sub menu  Oral traditions:  Narratives Storytelling Oral history Proverbs Rhetoric Poetry Quotes Literature Museum Exhibitions Media Presentation Travel Rites and ceremonies-->
                         <!-- add sub menu  Oral traditions:  Narratives Storytelling Oral history Proverbs Rhetoric Poetry Quotes Literature Museum Exhibitions Media Presentation Travel Rites and ceremonies-->
                         <ul class="submenu-tag submenu" id="oral-traditions-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="narratives-tag">
                                 <label for="narratives-tag">Narratives</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="storytelling-tag">
                                 <label for="storytelling-tag">Storytelling</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="oral-history-tag">
                                 <label for="oral-history-tag">Oral history</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="proverbs-tag">
                                 <label for="proverbs-tag">Proverbs</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="rhetoric-tag">
                                 <label for="rhetoric-tag">Rhetoric</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="poetry-tag">
-                                <label for="poetry-tag">Poetry</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="poetry-cultural-tag">
+                                <label for="poetry-cultural-tag">Poetry</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="quotes-tag">
                                 <label for="quotes-tag">Quotes</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="literature-tag">
                                 <label for="literature-tag">Literature</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="museum-exhibitions-tag">
                                 <label for="museum-exhibitions-tag">Museum Exhibitions</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="media-presentation-tag">
                                 <label for="media-presentation-tag">Media Presentation</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="travel-tag">
                                 <label for="travel-tag">Travel</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="rites-ceremonies-tag">
-                                <label for="rites-ceremonies-tag">Rites and ceremonies</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="rites-ceremonies-communication-tag">
+                                <label for="rites-ceremonies-communication-tag">Rites and ceremonies</label>
                             </li>
-                        </ul>
-                            
+                        </ul> 
                     </li>
                 </ul>        
             </li>
@@ -691,74 +681,74 @@
                         <!-- add submenu : Status Religion Age Ethnicity Class Gender Slavery Discrimination Family Household Neighbors Community Citizenship Outsiders Patriarchy Matriarchy-->
                             <!-- BEGIN: Submenu for Social Structures -->
                             <ul class="submenu-tag submenu" id="social-structures-submenu">
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="status-tag">
                                     <label for="status-tag">Status</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="religion-tag">
                                     <label for="religion-tag">Religion</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="age-tag">
                                     <label for="age-tag">Age</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="ethnicity-tag">
                                     <label for="ethnicity-tag">Ethnicity</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="class-tag">
                                     <label for="class-tag">Class</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="gender-tag">
                                     <label for="gender-tag">Gender</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="slavery-tag">
                                     <label for="slavery-tag">Slavery</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="discrimination-tag">
                                     <label for="discrimination-tag">Discrimination</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="family-tag">
                                     <label for="family-tag">Family</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="household-tag">
                                     <label for="household-tag">Household</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="neighbors-tag">
                                     <label for="neighbors-tag">Neighbors</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="community-tag">
                                     <label for="community-tag">Community</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="citizenship-tag">
                                     <label for="citizenship-tag">Citizenship</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="outsiders-tag">
                                     <label for="outsiders-tag">Outsiders</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="patriarchy-tag">
                                     <label for="patriarchy-tag">Patriarchy</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="matriarchy-tag">
                                     <label for="matriarchy-tag">Matriarchy</label>
                                 </li>
                             </ul>
                             <!-- END: Submenu for Social Structures -->
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="socio-political-communities-tag">
                         <label for="socio-political-communities-tag">Socio-political Communities</label>
                         
@@ -769,31 +759,31 @@
                         <!-- add submenu :  Monarchy Democracy Dictatorship Tribal authority Sheikhdom Shariah Secular-->
                          <!-- BEGIN: Submenu for Governance -->
                             <ul class="submenu-tag submenu" id="governance-submenu">
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="monarchy-tag">
                                     <label for="monarchy-tag">Monarchy</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="democracy-tag">
                                     <label for="democracy-tag">Democracy</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="dictatorship-tag">
                                     <label for="dictatorship-tag">Dictatorship</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="tribal-authority-tag">
                                     <label for="tribal-authority-tag">Tribal authority</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="sheikhdom-tag">
                                     <label for="sheikhdom-tag">Sheikhdom</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="shariah-tag">
                                     <label for="shariah-tag">Shariah</label>
                                 </li>
-                                <li>
+                                <li class="end-of-branch">
                                     <input class="topic-toggle" type="checkbox" id="secular-tag">
                                     <label for="secular-tag">Secular</label>
                                 </li>
@@ -801,15 +791,15 @@
                             <!-- END: Submenu for Governance -->
                         </li>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="living-societies-tag">
                         <label for="living-societies-tag">Living Societies</label>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="disappeared-societies-tag">
                         <label for="disappeared-societies-tag">Disappeared Societies</label>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="past-societies-tag">
                         <label for="past-societies-tag">Past Societies</label>
                     </li>
@@ -830,61 +820,61 @@
                             <label for="mobility-tag">Mobility</label>
                                 <!-- BEGIN: Submenu for Mobility -->
                                 <ul class="submenu-tag submenu" id="mobility-submenu">
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="expedition-tag">
                                         <label for="expedition-tag">Expedition</label>
                                     </li>
-                                    <li>
-                                        <input class="topic-toggle" type="checkbox" id="tourism-tag">
-                                        <label for="tourism-tag">Tourism</label>
+                                    <li class="end-of-branch">
+                                        <input class="topic-toggle" type="checkbox" id="tourism-mobility-tag">
+                                        <label for="tourism-mobility-tag">Tourism</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="education-tag">
                                         <label for="education-tag">Education</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="trade-tag">
                                         <label for="trade-tag">Trade</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="migration-tag">
                                         <label for="migration-tag">Migration</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="immigration-tag">
                                         <label for="immigration-tag">Immigration</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="displacement">
                                         <label for="displacement">Displacement</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="colonization-tag">
                                         <label for="colonization-tag">Colonization</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="exile-tag">
                                         <label for="exile-tag">Exile</label>
                                     </li>
-                                    <li>
-                                        <input class="topic-toggle" type="checkbox" id="slavery-tag">
-                                        <label for="slavery-tag">Slavery</label>
+                                    <li class="end-of-branch">
+                                        <input class="topic-toggle" type="checkbox" id="slavery-mobility-tag">
+                                        <label for="slavery-mobility-tag">Slavery</label>
                                     </li>
 
                                 </ul>
                                 <!-- END: Submenu for Mobility -->
                         </li>
                         <li>
-                            <input class="topic-toggle" type="checkbox" id="cultural-amalgamation-tag">
-                            <label for="cultural-amalgamation-tag">Cultural Amalgamation</label>
+                            <input class="topic-toggle" type="checkbox" id="cultural-amalgamation-human-tag">
+                            <label for="cultural-amalgamation-human-tag">Cultural Amalgamation</label>
                             <!-- add submenu:  Cosmopolitanism Multi-culturality-->
                                 <!-- BEGIN: Submenu for Cultural Amalgamation-->
                                 <ul class="submenu-tag submenu" id="cultural-amalgamation-submenu">
-                                    <li>
-                                        <input class="topic-toggle" type="checkbox" id="cosmopolitanism-tag">
-                                        <label for="cosmopolitanism-tag">Cosmopolitanism</label>
+                                    <li class="end-of-branch">
+                                        <input class="topic-toggle" type="checkbox" id="cosmopolitanism-cultural-tag">
+                                        <label for="cosmopolitanism-cultural-tag">Cosmopolitanism</label>
                                     </li>
-                                    <li>
+                                    <li class="end-of-branch">
                                         <input class="topic-toggle" type="checkbox" id="multi-culturality-tag">
                                         <label for="multi-culturality-tag">Multi-culturality</label>
                                     </li>
@@ -910,39 +900,39 @@
                         <!-- add submenu Preliterate Period Bronze Age Iron Age Medieval Religious buildings Administrative buildings Historical buildings Ruins World heritage site-->
                         <!-- BEGIN: Submenu for Past / Ancient Settlements-->
                         <ul class="submenu-tag submenu" id="past-ancient-settlements-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="preliterate-period-tag">
                                 <label for="preliterate-period-tag">Preliterate Period</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="bronze-age-tag">
                                 <label for="bronze-age-tag">Bronze Age</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="iron-age-tag">
                                 <label for="iron-age-tag">Iron Age</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="medieval-tag">
                                 <label for="medieval-tag">Medieval</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="religious-buildings-tag">
                                 <label for="religious-buildings-tag">Religious buildings</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="administrative-buildings-tag">
                                 <label for="administrative-buildings-tag">Administrative buildings</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="historical-buildings-tag">
                                 <label for="historical-buildings-tag">Historical buildings</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="ruins-tag">
                                 <label for="ruins-tag">Ruins</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="world-heritage-site-tag">
                                 <label for="world-heritage-site-tag">World heritage site</label>
                             </li>
@@ -954,35 +944,35 @@
                         <!-- add submenu Villages Towns Cities Mega-cities Ruins Suburbs Ghettos Gentrificated Districts-->
                         <!-- BEGIN: Submenu for Modern / Contemporary Settlements-->
                         <ul class="submenu-tag submenu" id="modern-contemporary-settlements-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="villages-tag">
                                 <label for="villages-tag">Villages</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="towns-tag">
                                 <label for="towns-tag">Towns</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="cities-tag">
                                 <label for="cities-tag">Cities</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="mega-cities-tag">
                                 <label for="mega-cities-tag">Mega-cities</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="ruins-tag">
-                                <label for="ruins-tag">Ruins</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="ruins-settlements-tag">
+                                <label for="ruins-settlements-tag">Ruins</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="suburbs-tag">
                                 <label for="suburbs-tag">Suburbs</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="ghettos-tag">
                                 <label for="ghettos-tag">Ghettos</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="gentrificated-districts-tag">
                                 <label for="gentrificated-districts-tag">Gentrificated Districts</label>
                             </li>
@@ -994,15 +984,15 @@
                         <!-- add submenu  Living heritage site World heritage site Old towns of the cities-->
                         <!-- BEGIN: Submenu for Continuous Settlements-->
                         <ul class="submenu-tag submenu" id="continuous-settlements-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="living-heritage-site-tag">
                                 <label for="living-heritage-site-tag">Living heritage site</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="world-heritage-site-tag">
-                                <label for="world-heritage-site-tag">World heritage site</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="world-heritage-site-continuous-tag">
+                                <label for="world-heritage-site-continuous-tag">World heritage site</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="old-towns-of-the-cities-tag">
                                 <label for="old-towns-of-the-cities-tag">Old towns of the cities</label>
                             </li>
@@ -1014,44 +1004,44 @@
                         <!-- add submenu:   Palaces Monuments Residential Buildings Administrative Buildings Plaza-->
                          <!-- BEGIN: Submenu for Settlement Elements-->
                         <ul class="submenu-tag submenu" id="settlement-elements-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="palaces-tag">
                                 <label for="palaces-tag">Palaces</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="monuments-tag">
                                 <label for="monuments-tag">Monuments</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="residential-buildings-tag">
                                 <label for="residential-buildings-tag">Residential Buildings</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="administrative-buildings-tag">
-                                <label for="administrative-buildings-tag">Administrative Buildings</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="administrative-buildings-settlement-tag">
+                                <label for="administrative-buildings-settlement-tag">Administrative Buildings</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="plaza-tag">
                                 <label for="plaza-tag">Plaza</label>
                             </li>
                             <!-- CONTINUE: Graveyards, Neighborhoods, Central / suburb, Slum / squatted spaces-->
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="graveyards-tag">
                                 <label for="graveyards-tag">Graveyards</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="neighborhoods-tag">
                                 <label for="neighborhoods-tag">Neighborhoods</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="ethnic-clusters-tag">
                                 <label for="ethnic-clusters-tag">Ethnic Clusters</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="central-suburb-tag">
                                 <label for="central-suburb-tag">Central / Suburb</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="slum-squatted-spaces-tag">
                                 <label for="slum-squatted-spaces-tag">Slum / Squatted Spaces</label>
                             </li>
@@ -1075,29 +1065,29 @@
                         <!-- add submenu  Oral Traditions Traditional Training Traditional Agriculture Traditional Art Vernacular Architecture Shipbuilding-->
                         <!-- BEGIN: Submenu for Traditional Knowledge-->
                         <ul class="submenu-tag submenu" id="traditional-knowledge-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="oral-traditions-tag">
                                 <label for="oral-traditions-tag">Oral Traditions</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="traditional-training-tag">
                                 <label for="traditional-training-tag">Traditional Training</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="traditional-agriculture-tag">
                                 <label for="traditional-agriculture-tag">Traditional Agriculture</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="traditional-art-tag">
                                 <label for="traditional-art-tag">Traditional Art</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="vernacular-architecture-tag">
                                 <label for="vernacular-architecture-tag">Vernacular Architecture</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="shipbuilding-tag">
-                                <label for="shipbuilding-tag">Shipbuilding</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="shipbuilding-traditional-tag">
+                                <label for="shipbuilding-traditional-tag">Shipbuilding</label>
                             </li>
                         </ul>
                     </li>
@@ -1107,51 +1097,51 @@
                         <!-- add submenu  Winemaking Olive Oil Process Bread making Ceremonial Feasts Festival Feasts Funeral Feasts Circumcise Feasts Religious Feasts (iftar) Treating neighbor with food Welcoming stranger Sacrification Fruit offering-->
                         <!-- BEGIN: Submenu for Traditional Food and Beverage-->
                         <ul class="submenu-tag submenu" id="traditional-food-beverage-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="winemaking-tag">
                                 <label for="winemaking-tag">Winemaking</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="olive-oil-process-tag">
                                 <label for="olive-oil-process-tag">Olive Oil Process</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="bread-making-tag">
                                 <label for="bread-making-tag">Bread making</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="ceremonial-feasts-tag">
                                 <label for="ceremonial-feasts-tag">Ceremonial Feasts</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="festival-feasts-tag">
                                 <label for="festival-feasts-tag">Festival Feasts</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="funeral-feasts-tag">
                                 <label for="funeral-feasts-tag">Funeral Feasts</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="circumcise-feasts-tag">
                                 <label for="circumcise-feasts-tag">Circumcise Feasts</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="religious-feasts-iftar-tag">
                                 <label for="religious-feasts-iftar-tag">Religious Feasts (iftar)</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="treating-neighbor-with-food-tag">
                                 <label for="treating-neighbor-with-food-tag">Treating neighbor with food</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="welcoming-stranger-tag">
                                 <label for="welcoming-stranger-tag">Welcoming stranger</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="sacrification-tag">
                                 <label for="sacrification-tag">Sacrification</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="fruit-offering-tag">
                                 <label for="fruit-offering-tag">Fruit offering</label>
                             </li>
@@ -1163,25 +1153,25 @@
                         <!-- add submenu   Devil Dances Masks Ayurvedic Religious Healing-->
                         <!-- BEGIN: Submenu for Traditional Healing-->
                         <ul class="submenu-tag submenu" id="traditional-healing-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="devil-dances-tag">
                                 <label for="devil-dances-tag">Devil Dances</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="masks-tag">
-                                <label for="masks-tag">Masks</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="masks-healing-tag">
+                                <label for="masks-healing-tag">Masks</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="ayurvedic-tag">
                                 <label for="ayurvedic-tag">Ayurvedic</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="religious-healing-tag">
                                 <label for="religious-healing-tag">Religious Healing</label>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="end-of-branch">
                         <input class="topic-toggle" type="checkbox" id="traditions-under-threat-tag">
                         <label for="traditions-under-threat-tag">Traditions Under Threat</label>
                     </li>
@@ -1203,19 +1193,19 @@
                         <!-- add submenu   Medicine Maps / Mapping Conservation Mineralogy-->
                         <!-- BEGIN: Submenu for Science-->
                         <ul class="submenu-tag submenu" id="science-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="medicine-tag">
                                 <label for="medicine-tag">Medicine</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="maps-mapping-tag">
                                 <label for="maps-mapping-tag">Maps / Mapping</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="conservation-tag">
                                 <label for="conservation-tag">Conservation</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="mineralogy-tag">
                                 <label for="mineralogy-tag">Mineralogy</label>
                             </li>
@@ -1227,39 +1217,39 @@
                         <!-- add submenu  Pyrotechnology Architecture Shipbuilding Automobile Navigation Agriculture tools Hunting tools Pearl diving tools Communication tools-->
                         <!-- BEGIN: Submenu for Technology-->
                         <ul class="submenu-tag submenu" id="technology-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="pyrotechnology-tag">
                                 <label for="pyrotechnology-tag">Pyrotechnology</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="architecture-tag">
                                 <label for="architecture-tag">Architecture</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="shipbuilding-tag">
-                                <label for="shipbuilding-tag">Shipbuilding</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="shipbuilding-technology-tag">
+                                <label for="shipbuilding-technology-tag">Shipbuilding</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="automobile-tag">
                                 <label for="automobile-tag">Automobile</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="navigation-tag">
-                                <label for="navigation-tag">Navigation</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="navigation-technology-tag">
+                                <label for="navigation-technology-tag">Navigation</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="agriculture-tools-tag">
                                 <label for="agriculture-tools-tag">Agriculture tools</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="hunting-tools-tag">
                                 <label for="hunting-tools-tag">Hunting tools</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="pearl-diving-tools-tag">
                                 <label for="pearl-diving-tools-tag">Pearl diving tools</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="communication-tools-tag">
                                 <label for="communication-tools-tag">Communication tools</label>
                             </li>
@@ -1283,43 +1273,43 @@
                         <!-- add submenu   Resistance Conflict Wars Indigenous peoples Identity Memory politics Revolution Colonization Decolonization Reconciliation-->
                         <!-- BEGIN: Submenu for Memory and Identity-->
                         <ul class="submenu-tag submenu" id="memory-identity-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="resistance-tag">
                                 <label for="resistance-tag">Resistance</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="conflict-tag">
                                 <label for="conflict-tag">Conflict</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="wars-tag">
                                 <label for="wars-tag">Wars</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="indigenous-peoples-tag">
                                 <label for="indigenous-peoples-tag">Indigenous peoples</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="identity-tag">
                                 <label for="identity-tag">Identity</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="memory-politics-tag">
                                 <label for="memory-politics-tag">Memory politics</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="revolution-tag">
                                 <label for="revolution-tag">Revolution</label>
                             </li>
-                            <li>
-                                <input class="topic-toggle" type="checkbox" id="colonization-tag">
-                                <label for="colonization-tag">Colonization</label>
+                            <li class="end-of-branch">
+                                <input class="topic-toggle" type="checkbox" id="colonization-memory-tag">
+                                <label for="colonization-memory-tag">Colonization</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="decolonization-tag">
                                 <label for="decolonization-tag">Decolonization</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="reconciliation-tag">
                                 <label for="reconciliation-tag">Reconciliation</label>
                             </li>
@@ -1331,19 +1321,19 @@
                         <!-- add submenu   Heritage Management Heritage Tourism Heritage Diplomacy Heritage Ownership-->
                         <!-- BEGIN: Submenu for Heritage Preservation-->
                         <ul class="submenu-tag submenu" id="heritage-preservation-submenu">
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="heritage-management-tag">
                                 <label for="heritage-management-tag">Heritage Management</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="heritage-tourism-tag">
                                 <label for="heritage-tourism-tag">Heritage Tourism</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="heritage-diplomacy-tag">
                                 <label for="heritage-diplomacy-tag">Heritage Diplomacy</label>
                             </li>
-                            <li>
+                            <li class="end-of-branch">
                                 <input class="topic-toggle" type="checkbox" id="heritage-ownership-tag">
                                 <label for="heritage-ownership-tag">Heritage Ownership</label>
                             </li>

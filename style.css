@@ -398,6 +398,16 @@ label {
     animation: fadeIn 0.4s ease-in-out;
 }
 
+/* End of branch tags */
+.end-of-branch input[type="checkbox"]:checked + label {
+    color: orange; /* Change the text color to orange when checked */
+}
+
+.end-of-branch input[type="checkbox"]:checked {
+    accent-color: orange; /* Change the checkbox color to orange when checked (for browsers that support it) */
+}
+
+
 .submenu {
     display: none;
 }
