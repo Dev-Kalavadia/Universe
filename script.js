@@ -73,7 +73,6 @@ function handleTreeDropdownClick(event) {
 
 document.getElementById('search-btn').addEventListener('click', function () {
     document.getElementById('filter-sidebar').classList.toggle('active');
-    
 
 });
 
@@ -217,3 +216,41 @@ document.querySelectorAll('.topic-toggle').forEach(function (checkbox) {
         // You can add additional functionality here if needed
     });
 });
+
+let selectedTags = [];
+
+// Function to update the display of selected tags
+function updateSelectedTagsDisplay() {
+    const container = document.getElementById('selected-tags-container');
+    container.innerHTML = ''; // Clear the container
+
+    // Create a tag element for each selected tag, but only up to 10
+    selectedTags.slice(0, 10).forEach(tagId => {
+        const tagLabel = document.querySelector(`label[for="${tagId}"]`);
+        if (tagLabel) {
+            const tagElement = document.createElement('span');
+            tagElement.classList.add('selected-tag');
+            tagElement.textContent = tagLabel.textContent; // Get the text from the label
+            container.appendChild(tagElement); // Append the tag element to the container
+        }
+    });
+}
+
+// Event listener for checkbox click
+document.querySelectorAll('.end-of-branch input[type="checkbox"]').forEach(function(checkbox) {
+    checkbox.addEventListener('click', function() {
+        const tagId = checkbox.id;
+        if (checkbox.checked) {
+            // Add the tag to the array if it's not already there
+            if (!selectedTags.includes(tagId)) {
+                selectedTags.push(tagId);
+            }
+        } else {
+            // Remove the tag from the array
+            selectedTags = selectedTags.filter(tag => tag !== tagId);
+        }
+        
+        updateSelectedTagsDisplay(); // Update the display whenever there's a change
+    });
+});
+

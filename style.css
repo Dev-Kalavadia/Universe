@@ -408,6 +408,32 @@ label {
 }
 
 
+#selected-tags-container {
+    position: fixed;
+    bottom: 80px; /* Adjust the distance from the bottom to place it above the search button */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between tags */
+    max-width: calc(100% - 40px); /* Limits the width while allowing padding */
+    padding: 5px; /* Padding inside the container for aesthetic spacing */
+    box-sizing: border-box;
+    z-index: 999; /* Just below the search button's z-index */
+}
+
+.selected-tag {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px; /* Slightly less padding than the search button for proportion */
+    border-radius: 5px; /* Matches the search button's border radius */
+    white-space: nowrap;
+    cursor: pointer; /* Optional: if the tags are interactive */
+    font-size: 16px; /* Slightly smaller font-size than the search button */
+}
+
 .submenu {
     display: none;
 }
