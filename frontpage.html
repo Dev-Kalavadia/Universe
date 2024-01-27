@@ -1,2409 +1,5 @@
 <?php get_header(); ?>
 <html lang="en">
-
-<!--  TAGGING LIST STARTS HERE -->
-
-<!-- "choices": {
-"environment": "Environment",
-"religious_practices": "Religious practices",
-"economic_activities": "Economic Activities",
-"arts_communication": "Arts and Communication",
-"social_structures": "Social Structures and Governance",
-"human_interaction": "Human Interaction and Encountering",
-"human_habitation": "Human Habitation",
-"tradition": "Tradition",
-"science_technology": "Science and Technology",
-"shared_contested": "Shared and Contested Heritage"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa32d666c8",
-"label": "Environment Tags",
-"name": "table_environment",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "environment"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654aa34c666c9",
-"label": "Sub Category",
-"name": "group_environment",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Environment ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "environment"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Geographical": "Geographical",
-"Climate": "Climate",
-"Natural Disasters": "Natural Disasters",
-"Cultural Effects": "Cultural Effects"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa3b9666ca",
-"label": "Subject Tag",
-"name": "tag_geographical",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Environment -> Geographical",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa34c666c9",
-"operator": "==",
-"value": "Geographical"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Ocean": "Ocean",
-"Sea": "Sea",
-"River": "River",
-"Land": "Land",
-"Mountain": "Mountain",
-"Glacier": "Glacier",
-"Arctic": "Arctic",
-"Valley": "Valley",
-"Oasis": "Oasis",
-"Forest": "Forest",
-"Desert": "Desert",
-"Canyon": "Canyon"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa5291d53d",
-"label": "Subject Tag",
-"name": "tag_climate",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Environment -> Climate",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa34c666c9",
-"operator": "==",
-"value": "Climate"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Temperate": "Temperate",
-"Tropic": "Tropic",
-"Humid": "Humid",
-"Desert": "Desert",
-"Polar": "Polar",
-"Arid": "Arid"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa54e1d53e",
-"label": "Subject Tag",
-"name": "tag_culturalEffects",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Environment -> Cultural Effects",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa34c666c9",
-"operator": "==",
-"value": "Cultural Effects"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Population Density": "Population Density",
-"Pollution": "Pollution",
-"Climate change": "Climate change"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654aa67681114",
-"label": "Religious Practices Tags",
-"name": "table_religious",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "religious_practices"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654aa67681115",
-"label": "Sub Category",
-"name": "group_religiousPractices",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "religious_practices"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Spiritualism": "Spiritualism",
-"Mythology": "Mythology",
-"Symbolism": "Symbolism",
-"Sacred Cities": "Sacred Cities",
-"Sacred Landscapes \/ Beings": "Sacred Landscapes \/ Beings",
-"Sacred Places": "Sacred Places",
-"Multi-layered Sanctity": "Multi-layered Sanctity",
-"Belief systems": "Belief systems",
-"Religious Music": "Religious Music",
-"Religious Art": "Religious Art",
-"Religious Conflict": "Religious Conflict",
-"Rites and Ceremonies": "Rites and Ceremonies"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa67681116",
-"label": "Subject Tag",
-"name": "tag_Spirtualism",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Spirtualism",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Spiritualism"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa73e81119",
-"label": "Subject Tag",
-"name": "tag_mythology",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Mythology",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Spiritualism"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa7878111a",
-"label": "Subject Tag",
-"name": "tag_symbolism",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Symbolism",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Symbolism"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa67681117",
-"label": "Subject Tag",
-"name": "tag_sacredCities",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Sacred Cities",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Sacred Cities"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Mecca": "Mecca",
-"Jerusalem": "Jerusalem"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa67681118",
-"label": "Subject Tag",
-"name": "tag_sacredLandscapes",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Sacred Landscapes \/ Beings",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Sacred Landscapes \/ Beings"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Pilgrim’s route": "Pilgrim’s route",
-"Beaches": "Beaches",
-"Trees": "Trees",
-"Rocks": "Rocks"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa7ac8111b",
-"label": "Subject Tag",
-"name": "tag_sacredPlaces",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Sacred Places",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Sacred Places"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Church": "Church",
-"Mosque": "Mosque",
-"Masjid": "Masjid",
-"Synagogue": "Synagogue",
-"Temple": "Temple",
-"Cemetery": "Cemetery",
-"Columbarium": "Columbarium",
-"Chapel": "Chapel",
-"Shrine": "Shrine"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa7da8111c",
-"label": "Subject Tag",
-"name": "tag_multilayeredSanctity",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Multi-layered Sanctity",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Multi-layered Sanctity"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Hagia Sophia": "Hagia Sophia"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa8018111d",
-"label": "Subject Tag",
-"name": "tag_beliefSystems",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Belief Systems",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Belief systems"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Islam": "Islam",
-"Christianism": "Christianism",
-"Judaism": "Judaism",
-"Sufism": "Sufism",
-"Hinduism": "Hinduism",
-"Buddhism": "Buddhism",
-"Shamanism": "Shamanism",
-"Nature worshiping": "Nature worshiping",
-"New age beliefs": "New age beliefs"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654aa8308111e",
-"label": "Subject Tag",
-"name": "tag_religiousMusic",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Religious Practices -> Religious Music",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654aa67681115",
-"operator": "==",
-"value": "Religious Music"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Islamic Music": "Islamic Music",
-"Christian Music": "Christian Music",
-"Jewish Music": "Jewish Music",
-"Buddhist Music": "Buddhist Music",
-"Hindu Music": "Hindu Music",
-"Shamanic music": "Shamanic music",
-"New age music": "New age music"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654b379fb85a8",
-"label": "Trade and Economic Activity Tags",
-"name": "table_trade",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "economic_activities"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654b379fb85a9",
-"label": "Sub Category",
-"name": "group_trade",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "economic_activities"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Trade routes": "Trade routes",
-"Markets": "Markets",
-"Crossroad Cities": "Crossroad Cities",
-"Port cities": "Port cities",
-"Importation & Exportation": "Importation & Exportation",
-"Commercial Activities and Institutions": "Commercial Activities and Institutions",
-"Taxation": "Taxation",
-"Tourism": "Tourism",
-"Skills": "Skills"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b379fb85aa",
-"label": "Subject Tag",
-"name": "tag_tradeRoutes",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Trade Routes",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Trade routes"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Caravansary": "Caravansary",
-"Spice Route": "Spice Route",
-"Silk Road": "Silk Road",
-"Indian Ocean": "Indian Ocean",
-"Navigation": "Navigation"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3a52b85ad",
-"label": "Subject Tag",
-"name": "tag_markets",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Markets",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Markets"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Open Bazaars": "Open Bazaars",
-"Covered Bazaars (souks)": "Covered Bazaars (souks)",
-"Historical Bazaars": "Historical Bazaars",
-"Bakkalas": "Bakkalas"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3a78b85ae",
-"label": "Subject Tag",
-"name": "tag_crossroadCities",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Crossroad Cities",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Crossroad Cities"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Transportation (Caravans etc.)": "Transportation (Caravans etc.)",
-"Caravansaries": "Caravansaries",
-"Cosmopolitanism": "Cosmopolitanism",
-"Culture Amalgamation": "Culture Amalgamation"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3a9eb85af",
-"label": "Subject Tag",
-"name": "tag_portCities",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Port Cities",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Port cities"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Transportation(Dhow etc.)": "Transportation(Dhow etc.)",
-"Cosmopolitanism": "Cosmopolitanism",
-"Culture Amalgamation": "Culture Amalgamation"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3ad2b85b0",
-"label": "Subject Tag",
-"name": "tag_importationExportation",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Importation & Exportation",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Importation & Exportation"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3af3b85b1",
-"label": "Subject Tag",
-"name": "tag_commercialActivitiesAndInstitutions",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Commercial Activities and Institutions",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Commercial Activities and Institutions"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Slavery": "Slavery",
-"Colonialism": "Colonialism",
-"Companies(e.g VOC)": "Companies(e.g VOC)"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3b4cb85b2",
-"label": "Subject Tag",
-"name": "tag_taxation",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Taxation",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Taxation"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3bb5b85b3",
-"label": "Subject Tag",
-"name": "tag_tourism",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Tourism",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Tourism"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Cultural tourism": "Cultural tourism",
-"Mass tourism": "Mass tourism",
-"Business tourism": "Business tourism",
-"Dark Heritage tourism": "Dark Heritage tourism"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3bcfb85b4",
-"label": "Subject Tag",
-"name": "tag_skills",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Trade and Economic Activity -> Skills",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b379fb85a9",
-"operator": "==",
-"value": "Skills"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Fishing": "Fishing",
-"Pearling": "Pearling",
-"Agriculture": "Agriculture",
-"Mining": "Mining",
-"Water management": "Water management",
-"Shipbuilding": "Shipbuilding",
-"Artisanship": "Artisanship"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654b3cf6d7da9",
-"label": "Arts and Communication",
-"name": "table_artsAndCommunications",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "arts_communication"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654b3cf6d7daa",
-"label": "Sub Category",
-"name": "group_artsAndCommunication",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Arts & Communication ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "arts_communication"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Performing Arts": "Performing Arts",
-"Media Arts": "Media Arts",
-"Visual Arts": "Visual Arts",
-"Literary Arts": "Literary Arts",
-"Cultural \/ Social Communication": "Cultural \/ Social Communication"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3cf6d7dab",
-"label": "Subject Tag",
-"name": "tag_performingArts",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Arts & Communication -> Performing Arts",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b3cf6d7daa",
-"operator": "==",
-"value": "Performing Arts"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Theater": "Theater",
-"Opera": "Opera",
-"Dance": "Dance",
-"Music": "Music"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3f4cd7daf",
-"label": "Subject Tag",
-"name": "tag_mediaArts",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Arts & Communication -> Media Arts",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b3cf6d7daa",
-"operator": "==",
-"value": "Media Arts"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Installation Art": "Installation Art",
-"Film": "Film",
-"Computer \/ Digital Art (e.g. AI, VR, 3D)": "Computer \/ Digital Art (e.g. AI, VR, 3D)"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3f6dd7db0",
-"label": "Subject Tag",
-"name": "tag_visualArts",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Arts & Communication -> Visual Arts",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b3cf6d7daa",
-"operator": "==",
-"value": "Visual Arts"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Painting": "Painting",
-"Sculpture": "Sculpture",
-"Masks": "Masks",
-"Crafts": "Crafts"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b3fc1d7db1",
-"label": "Subject Tag",
-"name": "tag_literaryArts",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Arts & Communication -> Literary Arts",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b3cf6d7daa",
-"operator": "==",
-"value": "Literary Arts"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Fiction": "Fiction",
-"Poetry": "Poetry",
-"Novel": "Novel"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654b4051d7db2",
-"label": "Subject Tag",
-"name": "tag_culturalAndSocialCommunication",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Arts & Communication -> Cultural \/ Social Communication",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654b3cf6d7daa",
-"operator": "==",
-"value": "Cultural \/ Social Communication"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Narratives": "Narratives",
-"Storytelling": "Storytelling",
-"Oral history": "Oral history",
-"Proverbs": "Proverbs",
-"Rhetoric": "Rhetoric",
-"Poetry": "Poetry",
-"Quotes": "Quotes",
-"Literature": "Literature",
-"Museum": "Museum",
-"Exhibitions": "Exhibitions",
-"Media": "Media",
-"Presentation": "Presentation",
-"Travel": "Travel",
-"Rites and ceremonies": "Rites and ceremonies"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654f3d0d0e8b4",
-"label": "Social Structures and Governance",
-"name": "table_socialStructuresAndGovernance",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "social_structures"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654f3d0d0e8b5",
-"label": "Sub Category",
-"name": "group_socialStructuresAndGovernance",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "social_structures"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Social Structures": "Social Structures",
-"Socio-political Communities": "Socio-political Communities",
-"Governance": "Governance",
-"Living Societies": "Living Societies",
-"Disappeared Societies": "Disappeared Societies",
-"Past Societies": "Past Societies"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3d0d0e8b6",
-"label": "Subject Tag",
-"name": "tag_socialStructures",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance -> Social Structures",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3d0d0e8b5",
-"operator": "==",
-"value": "Social Structures"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Status": "Status",
-"Religion": "Religion",
-"Age": "Age",
-"Ethnicity": "Ethnicity",
-"Class": "Class",
-"Gender": "Gender",
-"Slavery": "Slavery",
-"Discrimination": "Discrimination",
-"Family": "Family",
-"Household": "Household",
-"Neighbors": "Neighbors",
-"Community": "Community",
-"Citizenship": "Citizenship",
-"Outsiders": "Outsiders",
-"Patriarchy": "Patriarchy",
-"Matriarchy": "Matriarchy"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3dc5cba65",
-"label": "Subject Tag",
-"name": "tag_sociopoliticalCommunities",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance -> Socio-political Communities",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3d0d0e8b5",
-"operator": "==",
-"value": "Socio-political communities"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Majorities": "Majorities",
-"Minorities": "Minorities",
-"Discriminated people": "Discriminated people"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3dfdcba66",
-"label": "Subject Tag",
-"name": "tag_governance",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance -> Governance",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3d0d0e8b5",
-"operator": "==",
-"value": "Governance"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Monarchy": "Monarchy",
-"Democracy": "Democracy",
-"Dictatorship": "Dictatorship",
-"Tribal authority": "Tribal authority",
-"Sheikhdom": "Sheikhdom",
-"Shariah": "Shariah",
-"Secular": "Secular"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3e39cba67",
-"label": "Subject Tag",
-"name": "tag_livingSocieties",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance -> Living Societies",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3d0d0e8b5",
-"operator": "==",
-"value": "Living Societies"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3e5df4532",
-"label": "Subject Tag",
-"name": "tag_disappearedSocieties",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance -> Disappeared Societies",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3d0d0e8b5",
-"operator": "==",
-"value": "Disappeared Societies"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3e75f4533",
-"label": "Subject Tag",
-"name": "tag_pastSocieties",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Social Structures and Governance -> Past Societies",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3d0d0e8b5",
-"operator": "==",
-"value": "Past Societies"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"N\/A": "N\/A"
-},
-"allow_custom": 1,
-"save_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654f3eef82b19",
-"label": "Human Interaction and Encountering",
-"name": "table_humanInteractionAndEncountering",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "human_interaction"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654f3eef82b1a",
-"label": "Sub Category",
-"name": "group_humanInteractionAndEncountering",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Interaction and Encountering ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "human_interaction"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Mobility": "Mobility",
-"Cultural Amalgamation": "Cultural Amalgamation"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3eef82b1b",
-"label": "Subject Tag",
-"name": "tag_mobility",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Interaction and Encountering -> Mobility",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3eef82b1a",
-"operator": "==",
-"value": "Mobility"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Expedition": "Expedition",
-"Tourism": "Tourism",
-"Education": "Education",
-"Trade": "Trade",
-"Migration": "Migration",
-"Immigration": "Immigration",
-"Displacement": "Displacement",
-"Colonization": "Colonization",
-"Exile": "Exile",
-"Slavery": "Slavery"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f3fbb82b21",
-"label": "Subject Tag",
-"name": "tag_culturalAmalgamation",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Interaction and Encountering -> Cultural Amalgamation",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f3eef82b1a",
-"operator": "==",
-"value": "Cultural Amalgamation"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Cosmopolitanism": "Cosmopolitanism",
-"Multi-culturality": "Multi-culturality"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654f44031cc66",
-"label": "Human Habitation",
-"name": "table_humanHabitation",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "human_habitation"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654f44031cc67",
-"label": "Sub Category",
-"name": "group_humanHabitation",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "human_habitation"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Past \/ Ancient Settlements": "Past \/ Ancient Settlements",
-"Modern \/ Contemporary Settlements": "Modern \/ Contemporary Settlements",
-"Continuous Settlements": "Continuous Settlements",
-"Settlement Elements": "Settlement Elements"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f44031cc68",
-"label": "Subject Tag",
-"name": "tag_pastAncientSettlements",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Past \/ Ancient Settlements",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f44031cc67",
-"operator": "==",
-"value": "Past \/ Ancient Settlements"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Preliterate Period": "Preliterate Period",
-"Bronze Age": "Bronze Age",
-"Iron Age": "Iron Age",
-"Medieval": "Medieval",
-"Religious buildings": "Religious buildings",
-"Administrative buildings": "Administrative buildings",
-"Historical buildings": "Historical buildings",
-"Ruins": "Ruins",
-"World heritage site": "World heritage site"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f44941cc6a",
-"label": "Subject Tag",
-"name": "tag_modernContemporarySettlements",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Modern \/ Contemporary Settlements",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f44031cc67",
-"operator": "==",
-"value": "Modern \/ Contemporary Settlements"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Villages": "Villages",
-"Towns": "Towns",
-"Cities": "Cities",
-"Mega-cities": "Mega-cities",
-"Ruins": "Ruins",
-"Suburbs": "Suburbs",
-"Ghettos": "Ghettos",
-"Gentrificated Districts": "Gentrificated Districts"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f44d81cc6b",
-"label": "Subject Tag",
-"name": "tag_continuousSettlements",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Continuous Settlements",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f44031cc67",
-"operator": "==",
-"value": "Continuous Settlements"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Living heritage site": "Living heritage site",
-"World heritage site": "World heritage site",
-"Old towns of the cities": "Old towns of the cities"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f452a1cc6c",
-"label": "Subject Tag",
-"name": "tag_settlementElements",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Settlement Elements",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f44031cc67",
-"operator": "==",
-"value": "Settlement Elements"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Palaces": "Palaces",
-"Monuments": "Monuments",
-"Residential Buildings": "Residential Buildings",
-"Administrative Buildings": "Administrative Buildings",
-"Plaza, square": "Plaza, square",
-"Graveyards": "Graveyards",
-"Neighborhoods": "Neighborhoods",
-"Ghetto": "Ghetto",
-"Ethnic clusters": "Ethnic clusters",
-"Central \/ suburb": "Central \/ suburb",
-"Slum \/ squatted spaces": "Slum \/ squatted spaces"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654f459c81243",
-"label": "Tradition",
-"name": "table_tradition",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "tradition"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654f459c81244",
-"label": "Sub Category",
-"name": "group_tradition",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Tradition ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "tradition"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Traditional Knowledge": "Traditional Knowledge",
-"Traditional Food and Beverage": "Traditional Food and Beverage",
-"Traditional Healing": "Traditional Healing",
-"Traditions Under Threat": "Traditions Under Threat"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f459c81245",
-"label": "Subject Tag",
-"name": "tag_traditionalKnowledge",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Traditional Knowledge",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f459c81244",
-"operator": "==",
-"value": "Traditional Knowledge"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Oral Traditions": "Oral Traditions",
-"Traditional Training": "Traditional Training",
-"Traditional Agriculture": "Traditional Agriculture",
-"Traditional Art": "Traditional Art",
-"Vernacular Architecture": "Vernacular Architecture",
-"Shipbuilding": "Shipbuilding"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f461581249",
-"label": "Subject Tag",
-"name": "tag_traditionalFoodAndBeverage",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Traditional Food and Beverage",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f459c81244",
-"operator": "==",
-"value": "Traditional Food and Beverage"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Winemaking": "Winemaking",
-"Olive Oil Process": "Olive Oil Process",
-"Bread making": "Bread making",
-"Ceremonial Feasts": "Ceremonial Feasts",
-"Festival Feasts": "Festival Feasts",
-"Funeral Feasts": "Funeral Feasts",
-"Circumcise Feasts": "Circumcise Feasts",
-"Religious Feasts (iftar)": "Religious Feasts (iftar)",
-"Treating neighbor with food": "Treating neighbor with food",
-"Welcoming stranger": "Welcoming stranger",
-"Sacrification": "Sacrification",
-"Fruit offering": "Fruit offering"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f465f8124a",
-"label": "Subject Tag",
-"name": "tag_traditionalHealing",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Traditional Healing",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f459c81244",
-"operator": "==",
-"value": "Traditional Healing"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Devil Dances": "Devil Dances",
-"Masks": "Masks",
-"Ayurvedic": "Ayurvedic",
-"Religious Healing": "Religious Healing"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f46798124b",
-"label": "Subject Tag",
-"name": "tag_traditionsUnderThreat",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Human Habitation -> Traditions Under Threat",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f459c81244",
-"operator": "==",
-"value": "Traditions under Threat"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Cultural loses": "Cultural loses",
-"Woman rights": "Woman rights",
-"Marriage tradition": "Marriage tradition"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_654f470964758",
-"label": "Science and Technology",
-"name": "table_scienceAndTechnology",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "science_technology"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_654f470964759",
-"label": "Sub Category",
-"name": "group_scienceAndTechnology",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Science and Technology ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "science_technology"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Science": "Science",
-"Technology": "Technology"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f47096475a",
-"label": "Subject Tag",
-"name": "tag_science",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Science and Technology -> Science",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f470964759",
-"operator": "==",
-"value": "Science"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Medicine": "Medicine",
-"Maps \/ Mapping": "Maps \/ Mapping",
-"Conservation": "Conservation",
-"Mineralogy": "Mineralogy"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_654f49946475e",
-"label": "Subject Tag",
-"name": "tag_technology",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Science and Technology -> Technology",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654f470964759",
-"operator": "==",
-"value": "Technology"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Pyrotechnology": "Pyrotechnology",
-"Architecture": "Architecture",
-"Shipbuilding": "Shipbuilding",
-"Automobile": "Automobile",
-"Navigation": "Navigation",
-"Agriculture tools": "Agriculture tools",
-"Hunting tools": "Hunting tools",
-"Pearl diving tools": "Pearl diving tools",
-"Communication tools": "Communication tools"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
-{
-"key": "field_655bbab5e3444",
-"label": "Shared and Contested Heritage",
-"name": "table_sharedAndContestedHeritage",
-"aria-label": "",
-"type": "group",
-"instructions": "",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "shared_contested"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"layout": "table",
-"sub_fields": [
-{
-"key": "field_655bbab5e3445",
-"label": "Sub Category",
-"name": "group_sharedAndContestedHeritage",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Shared and Contested Heritage ->",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_654a989ba105b",
-"operator": "==",
-"value": "shared_contested"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Memory and Identity": "Memory and Identity",
-"Heritage Preservation": "Heritage Preservation"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_655bbab5e3446",
-"label": "Subject Tag",
-"name": "tag_memoryAndIdentity",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Shared and Contested Heritage -> Memory and Identity",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_655bbab5e3445",
-"operator": "==",
-"value": "Memory and Identity"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Resistance": "Resistance",
-"Conflict": "Conflict",
-"Wars": "Wars",
-"Indigenous peoples": "Indigenous peoples",
-"Identity": "Identity",
-"Memory politics": "Memory politics",
-"Revolution": "Revolution",
-"Colonization": "Colonization",
-"Decolonization": "Decolonization",
-"Reconciliation": "Reconciliation"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-},
-{
-"key": "field_655bbb5ee3448",
-"label": "Subject Tag",
-"name": "tag_heritagePreservation",
-"aria-label": "",
-"type": "checkbox",
-"instructions": "Shared and Contested Heritage -> Heritage Preservation",
-"required": 1,
-"conditional_logic": [
-[
-{
-"field": "field_655bbab5e3445",
-"operator": "==",
-"value": "Heritage Preservation"
-}
-]
-],
-"wrapper": {
-"width": "",
-"class": "",
-"id": ""
-},
-"choices": {
-"Heritage Management": "Heritage Management",
-"Heritage Tourism": "Heritage Tourism",
-"Heritage Diplomacy": "Heritage Diplomacy",
-"Heritage Ownership": "Heritage Ownership"
-},
-"allow_custom": 0,
-"default_value": [],
-"layout": "horizontal",
-"toggle": 0,
-"return_format": "value",
-"save_custom": 0,
-"custom_choice_button_text": "Add new choice"
-}
-]
-},
- -->
-
-
-
-
-<!--  TAGGING LIST ENDS HERE -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2426,239 +22,1346 @@
         <span class="line first-line"></span>
         <span class="line second-line"></span>
     </div>
-    <!--   <div class="menu-expanded">
-    <ul>
-      <li><a href="#">Environment</a></li>
-		<li><a href="#">Religious practices</a></li>
-		<li><a href="#">Trade and economic activity</a></li>
-		<li><a href="#">Social structures and governance </a></li>
-		<li><a href="#">Human interaction and encountering </a></li>
-		<li><a href="#">Human habitation </a></li>
-		<li><a href="#">Tradition</a></li>
-		<li><a href="#">Science and technology</a></li>
-		<li><a href="#">Shared and contested heritage</a></li>
-    </ul>
-  </div> -->
 
     <!-- CREATE MENU FROM TAGGING LIST -->
     <div class="menu-expanded">
-
+        <!-- Environment -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Environment</label>
+                <input type="checkbox" id="environment-menu" class="topic-toggle">
+                <label for="environment-menu">Environment</label>
                 <ul class="submenu-tag">
+                    <!-- Geographical -->
                     <li>
-                        <input type="checkbox" id="sub-Menu" class="topic-toggle">
-                        <label for="sub-Menu" class="submenu-label"
-                            data-submenu-id="geographical-submenu">Geographical</label>
+                        <input type="checkbox" id="geographical-menu" class="topic-toggle">
+                        <label for="geographical-menu" data-submenu-id="geographical-submenu">Geographical</label>
                         <ul class="submenu-tag submenu" id="geographical-submenu">
+                            <li><input class="topic-toggle" type="checkbox" id="ocean-tag"><label for="ocean-tag">Ocean</label></li>
+                            <li><input class="topic-toggle" type="checkbox" id="sea-tag"><label for="sea-tag">Sea</label></li>
+                            <li><input class="topic-toggle" type="checkbox" id="river-tag"><label for="river-tag">River</label></li>
+                            <li><input class="topic-toggle" type="checkbox" id="land-tag"><label for="land-tag">Land</label></li>
+                            <!-- Repeat for Mountain, Glacier, Arctic, Valley, Oasis, Forest, Desert, Canyon -->
+                            <!-- Mountain -->
+                            <li><input class="topic-toggle" type="checkbox" id="mountain-tag"><label for="mountain-tag">Mountain</label></li>
+                            <!-- Glacier -->
+                            <li><input class="topic-toggle" type="checkbox" id="glacier-tag"><label for="glacier-tag">Glacier</label></li>
+                            <!-- Arctic -->
+                            <li><input class="topic-toggle" type="checkbox" id="arctic-tag"><label for="arctic-tag">Arctic</label></li>
+                            <!-- Valley -->
+                            <li><input class="topic-toggle" type="checkbox" id="valley-tag"><label for="valley-tag">Valley</label></li>
+                            <!-- Oasis -->
+                            <li><input class="topic-toggle" type="checkbox" id="oasis-tag"><label for="oasis-tag">Oasis</label></li>
+                            <!-- Forest -->
+                            <li><input class="topic-toggle" type="checkbox" id="forest-tag"><label for="forest-tag">Forest</label></li>
+                            <!-- Desert -->
+                            <li><input class="topic-toggle" type="checkbox" id="desert-tag"><label for="desert-tag">Desert</label></li>
+                            <!-- Canyon -->
+                            <li><input class="topic-toggle" type="checkbox" id="canyon-tag"><label for="canyon-tag">Canyon</label></li>
+                        </ul>
+                    </li>
+                    <!-- Climate -->
+                    <li>
+                        <input type="checkbox" id="climate-menu" class="topic-toggle">
+                        <label for="climate-menu" data-submenu-id="climate-submenu">Climate</label>
+                        <ul class="submenu-tag submenu" id="climate-submenu">
+                            <!-- Climate tags will be listed here -->
+                            <!-- Insert checkboxes for Climate tags such as Temperate, Tropic, Humid, Arid, Polar, Desert -->
+                            <!-- Insert checkboxes for Climate tags such as Temperate, Tropic, Humid, Arid, Polar, Desert -->
                             <li>
-                                <input type="checkbox" id="subsub-Menu" class="topic-toggle">
-                                <label for="subsub-Menu">Ocean</label>
+                                <input class="topic-toggle" type="checkbox" id="temperate-tag">
+                                <label for="temperate-tag">Temperate</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="seasub-Menu" class="topic-toggle">
-                                <label for="seasub-Menu">Sea Water</label>
+                                <input class="topic-toggle" type="checkbox" id="tropic-tag">
+                                <label for="tropic-tag">Tropic</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="riversub-Menu" class="topic-toggle">
-                                <label for="riversub-Menu">River</label>
+                                <input class="topic-toggle" type="checkbox" id="humid-tag">
+                                <label for="humid-tag">Humid</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="landsub-Menu" class="topic-toggle">
-                                <label for="landsub-Menu">Land</label>
+                                <input class="topic-toggle" type="checkbox" id="arid-tag">
+                                <label for="arid-tag">Arid</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="mountainsub-Menu" class="topic-toggle">
-                                <label for="mountainsub-Menu">Mountain</label>
+                                <input class="topic-toggle" type="checkbox" id="polar-tag">
+                                <label for="polar-tag">Polar</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="glaciersub-Menu" class="topic-toggle">
-                                <label for="glaciersub-Menu">Glacier</label>
+                                <input class="topic-toggle" type="checkbox" id="desert-tag">
+                                <label for="desert-tag">Desert</label>
                             </li>
+
+                        </ul>
+                    </li>
+                    <!-- Natural Disasters -->
+                    <li>
+                        <input type="checkbox" id="natural-disasters-menu" class="topic-toggle">
+                        <label for="natural-disasters-menu" data-submenu-id="natural-disasters-submenu">Natural Disasters</label>
+                        <ul class="submenu-tag submenu" id="natural-disasters-submenu">
+                            <!-- Natural Disasters tags will be listed here -->
                             <li>
-                                <input type="checkbox" id="arcticsub-Menu" class="topic-toggle">
-                                <label for="arcticsub-Menu">Arctic</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="valleysub-Menu" class="topic-toggle">
-                                <label for="valleysub-Menu">Valley</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="oasissub-Menu" class="topic-toggle">
-                                <label for="oasissub-Menu">Oasis</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="forestsub-Menu" class="topic-toggle">
-                                <label for="forestsub-Menu">Forest</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="desertsub-Menu" class="topic-toggle">
-                                <label for="desertsub-Menu">Desert</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="canyonsub-Menu" class="topic-toggle">
-                                <label for="canyonsub-Menu">Canyon</label>
+                                <input class="topic-toggle" type="checkbox" id="temperate-tag">
+                                <label for="temperate-tag">Temperate</label>
                             </li>
                         </ul>
                     </li>
+                    <!-- Cultural Effects -->
                     <li>
-                        <input type="checkbox" id="sub-Menu2" class="topic-toggle">
-                        <label for="sub-Menu2" class="submenu-label">Climate</label>
-                        <ul class="submenu-tag submenu">
-                            <li>
-                                <input type="checkbox" id="subsub-Menu2" class="topic-toggle">
-                                <label for="subsub-Menu2">Temperate</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="seasub-Menu2" class="topic-toggle">
-                                <label for="seasub-Menu2">Tropic</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="riversub-Menu2" class="topic-toggle">
-                                <label for="riversub-Menu2">Humid</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="landsub-Menu2" class="topic-toggle">
-                                <label for="landsub-Menu2">Desert</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="mountainsub-Menu2" class="topic-toggle">
-                                <label for="mountainsub-Menu2">Polar</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="glaciersub-Menu2" class="topic-toggle">
-                                <label for="glaciersub-Menu2">Arid</label>
-                            </li>
-                        </ul>
-                        <!-- More submenu items... -->
-                    </li>
-
-                    <!-- NATURAL DISASTER SUBMENU -->
-
-                    <li>
-                        <input type="checkbox" id="sub-Menu3" class="topic-toggle">
-                        <label for="sub-Menu3" class="submenu-label">Natural Disasters</label>
-                    </li>
-
-                    <!-- Cultural heritage SUBMENU subsubmenu listed below -->
-                    <li>
-                        <input type="checkbox" id="sub-Menu4" class="topic-toggle">
-                        <label for="sub-Menu4" class="submenu-label">Cultural Effects</label>
-                        <ul class="submenu-tag submenu">
-                            <li>
-                                <input type="checkbox" id="subsub-Menu4" class="topic-toggle">
-                                <label for="subsub-Menu4">Population Density</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="seasub-Menu4" class="topic-toggle">
-                                <label for="seasub-Menu4">Pollution</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="riversub-Menu4" class="topic-toggle">
-                                <label for="riversub-Menu4">Climate change</label>
-                            </li>
-                        </ul>
-                    </li>
-
-
+                        <input type="checkbox" id="cultural-effects-menu" class="topic-toggle">
+                        <label for="cultural-effects-menu" data-submenu-id="cultural-effects-submenu">Cultural Effects</label>
+                        <ul class="submenu-tag submenu" id="cultural-effects-submenu">
+                        <!-- Cultural Effects -->
+                        
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="population-density-tag">
+                                    <label for="population-density-tag">Population Density</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="pollution-tag">
+                                    <label for="pollution-tag">Pollution</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="climate-change-tag">
+                                    <label for="climate-change-tag">Climate Change</label>
+                                </li>
+                            </ul>
+                        </li>
+                        
                 </ul>
             </li>
-
-
         </ul>
-
+    
+        <!-- Religious Practices -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Trade and economic activity</label>
+                <input type="checkbox" id="religious-practices-menu" class="topic-toggle">
+                <label for="religious-practices-menu">Religious Practices</label>
+                <ul class="submenu-tag submenu" id="religious-practices-submenu">
+                    <!-- Religious Practices tags will be listed here -->
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="spiritualism-tag">
+                        <label for="spiritualism-tag">Spiritualism</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="mythology-tag">
+                        <label for="mythology-tag">Mythology</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="symbolism-tag">
+                        <label for="symbolism-tag">Symbolism</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="sacred-cities-tag">
+                        <label for="sacred-cities-tag">Sacred Cities</label>
+                        <!-- add submenu mecca and jerusalem-->
+                        <ul class="submenu-tag submenu" id="sacred-cities-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="mecca-tag">
+                                <label for="mecca-tag">Mecca</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="jerusalem-tag">
+                                <label for="jerusalem-tag">Jerusalem</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="sacred-landscapes-beings-tag">
+                        <label for="sacred-landscapes-beings-tag">Sacred Landscapes / Beings</label>
+                         <!-- add submenu  Pilgrim’s route Beaches Trees Rocks-->
+                            <ul class="submenu-tag submenu" id="sacred-landscapes-beings-submenu">
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="pilgrims-route-tag">
+                                    <label for="pilgrims-route-tag">Pilgrim’s route</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="beaches-tag">
+                                    <label for="beaches-tag">Beaches</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="trees-tag">
+                                    <label for="trees-tag">Trees</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="rocks-tag">
+                                    <label for="rocks-tag">Rocks</label>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="sacred-places-tag">
+                        <label for="sacred-places-tag">Sacred Places</label>
+                        <!-- add sub menu  Church Mosque Masjid Synagogue Temple Cemetery Columbarium Chapel Shrine-->
+                        <ul class="submenu-tag submenu" id="sacred-places-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="church-tag">
+                                <label for="church-tag">Church</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="mosque-tag">
+                                <label for="mosque-tag">Mosque</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="masjid-tag">
+                                <label for="masjid-tag">Masjid</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="synagogue-tag">
+                                <label for="synagogue-tag">Synagogue</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="temple-tag">
+                                <label for="temple-tag">Temple</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="cemetery-tag">
+                                <label for="cemetery-tag">Cemetery</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="columbarium-tag">
+                                <label for="columbarium-tag">Columbarium</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="chapel-tag">
+                                <label for="chapel-tag">Chapel</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="shrine-tag">
+                                <label for="shrine-tag">Shrine</label>
+                            </li>
+                        
+                        </ul>
 
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="multi-layered-sanctity-tag">
+                        <label for="multi-layered-sanctity-tag">Multi-layered Sanctity</label>
+                        <!-- add sub menu Hagia Sophia-->
+                        <ul class="submenu-tag submenu" id="multi-layered-sanctity-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="hagia-sophia-tag">
+                                <label for="hagia-sophia-tag">Hagia Sophia</label>
+                            </li>
+                        </ul>   
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="belief-systems-tag">
+                        <label for="belief-systems-tag">Belief Systems</label>
+                        <!-- add sub menu   Islam Christianism Judaism Sufism Hinduism Buddhism Shamanism Nature worshiping New age beliefs-->
+                        <ul class="submenu-tag submenu" id="belief-systems-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="islam-tag">
+                                <label for="islam-tag">Islam</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="christianism-tag">
+                                <label for="christianism-tag">Christianism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="judaism-tag">
+                                <label for="judaism-tag">Judaism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="sufism-tag">
+                                <label for="sufism-tag">Sufism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="hinduism-tag">
+                                <label for="hinduism-tag">Hinduism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="buddhism-tag">
+                                <label for="buddhism-tag">Buddhism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="shamanism-tag">
+                                <label for="shamanism-tag">Shamanism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="nature-worshiping-tag">
+                                <label for="nature-worshiping-tag">Nature worshiping</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="new-age-beliefs-tag">
+                                <label for="new-age-beliefs-tag">New age beliefs</label>
+                            </li>
+                        </ul> 
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="religious-music-tag">
+                        <label for="religious-music-tag">Religious Music</label>
+                        <!-- add sub menu  Islamic Music Christian Music Jewish Music Buddhist Music Hindu Music Shamanic music New age music-->
+                        <ul class="submenu-tag submenu" id="religious-music-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="islamic-music-tag">
+                                <label for="islamic-music-tag">Islamic Music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="christian-music-tag">
+                                <label for="christian-music-tag">Christian Music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="jewish-music-tag">
+                                <label for="jewish-music-tag">Jewish Music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="buddhist-music-tag">
+                                <label for="buddhist-music-tag">Buddhist Music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="hindu-music-tag">
+                                <label for="hindu-music-tag">Hindu Music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="shamanic-music-tag">
+                                <label for="shamanic-music-tag">Shamanic music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="new-age-music-tag">
+                                <label for="new-age-music-tag">New age music</label>
+                            </li>
+                        </ul>    
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="religious-art-tag">
+                        <label for="religious-art-tag">Religious Art</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="religious-conflict-tag">
+                        <label for="religious-conflict-tag">Religious Conflict</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="rites-ceremonies-tag">
+                        <label for="rites-ceremonies-tag">Rites and Ceremonies</label>
+                    </li>
+                </ul>
             </li>
         </ul>
-
+               
+    
+        <!-- Economic Activities -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Arts and communication</label>
-
+                <input type="checkbox" id="economic-activities-menu" class="topic-toggle">
+                <label for="economic-activities-menu">Economic Activities</label>
+                <!-- add sub menu  Trade routes Markets Crossroad Cities Port cities Importation & Exportation Commercial Activities and Institutions Taxation Tourism Skills-->
+                <ul class="submenu-tag submenu" id="economic-activities-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="trade-routes-tag">
+                        <label for="trade-routes-tag">Trade routes</label>
+                        <!-- add sub menu Caravansary Spice Route Silk Road Indian Ocean Navigation-->
+                        <ul class="submenu-tag submenu" id="trade-routes-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="caravansary-tag">
+                                <label for="caravansary-tag">Caravansary</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="spice-route-tag">
+                                <label for="spice-route-tag">Spice Route</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="silk-road-tag">
+                                <label for="silk-road-tag">Silk Road</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="indian-ocean-tag">
+                                <label for="indian-ocean-tag">Indian Ocean</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="navigation-tag">
+                                <label for="navigation-tag">Navigation</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="markets-tag">
+                        <label for="markets-tag">Markets</label>
+                        <!-- add submenu Open Bazaars Covered Bazaars (souks) Historical Bazaars Bakkalas-->
+                        <ul class="submenu-tag submenu" id="markets-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="open-bazaars-tag">
+                                <label for="open-bazaars-tag">Open Bazaars</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="covered-bazaars-tag">
+                                <label for="covered-bazaars-tag">Covered Bazaars (souks)</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="historical-bazaars-tag">
+                                <label for="historical-bazaars-tag">Historical Bazaars</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="bakkalas-tag">
+                                <label for="bakkalas-tag">Bakkalas</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="crossroad-cities-tag">
+                        <label for="crossroad-cities-tag">Crossroad Cities</label>
+                        <!-- add submenu Transportation (Caravans etc.) Caravansaries Cosmopolitanism Culture Amalgamation-->
+                        <ul class="submenu-tag submenu" id="crossroad-cities-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="transportation-tag">
+                                <label for="transportation-tag">Transportation (Caravans etc.)</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="caravansaries-tag">
+                                <label for="caravansaries-tag">Caravansaries</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="cosmopolitanism-tag">
+                                <label for="cosmopolitanism-tag">Cosmopolitanism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="culture-amalgamation-tag">
+                                <label for="culture-amalgamation-tag">Culture Amalgamation</label>
+                            </li>
+                        </ul>   
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="port-cities-tag">
+                        <label for="port-cities-tag">Port cities</label>
+                        <!-- add submenu Transportation(Dhow etc.) Cosmopolitanism Culture Amalgamation-->
+                        <ul class="submenu-tag submenu" id="port-cities-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="transportation-tag">
+                                <label for="transportation-tag">Transportation(Dhow etc.)</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="cosmopolitanism-tag">
+                                <label for="cosmopolitanism-tag">Cosmopolitanism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="culture-amalgamation-tag">
+                                <label for="culture-amalgamation-tag">Culture Amalgamation</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="importation-exportation-tag">
+                        <label for="importation-exportation-tag">Importation & Exportation</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="commercial-activities-institutions-tag">
+                        <label for="commercial-activities-institutions-tag">Commercial Activities and Institutions</label>
+                        <!-- add submenu Colonialism Companies(e.g VOC)-->
+                        <ul class="submenu-tag submenu" id="commercial-activities-institutions-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="colonialism-tag">
+                                <label for="colonialism-tag">Slavery</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="colonialism-tag">
+                                <label for="colonialism-tag">Colonialism Companies(e.g VOC)</label>
+                            </li>
+                        </ul>    
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="taxation-tag">
+                        <label for="taxation-tag">Taxation</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="tourism-tag">
+                        <label for="tourism-tag">Tourism</label>
+                        <!-- add submenu  Cultural tourism Mass tourism Business tourism Dark Heritage tourism-->
+                        <!-- add submenu  Cultural tourism Mass tourism Business tourism Dark Heritage tourism-->
+                        <ul class="submenu-tag submenu" id="tourism-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="cultural-tourism-tag">
+                                <label for="cultural-tourism-tag">Cultural tourism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="mass-tourism-tag">
+                                <label for="mass-tourism-tag">Mass tourism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="business-tourism-tag">
+                                <label for="business-tourism-tag">Business tourism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="dark-heritage-tourism-tag">
+                                <label for="dark-heritage-tourism-tag">Dark Heritage tourism</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="skills-tag">
+                        <label for="skills-tag">Skills</label>
+                        <!-- add submenu  Fishing Pearling Agriculture Mining Water management Shipbuilding Artisanship-->
+                        <ul class="submenu-tag submenu" id="skills-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="fishing-tag">
+                                <label for="fishing-tag">Fishing</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="pearling-tag">
+                                <label for="pearling-tag">Pearling</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="agriculture-tag">
+                                <label for="agriculture-tag">Agriculture</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="mining-tag">
+                                <label for="mining-tag">Mining</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="water-management-tag">
+                                <label for="water-management-tag">Water management</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="shipbuilding-tag">
+                                <label for="shipbuilding-tag">Shipbuilding</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="artisanship-tag">
+                                <label for="artisanship-tag">Artisanship</label>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
             </li>
         </ul>
-
+    </ul>
+    
+        <!-- Arts and Communication -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Social structures and governance</label>
-
+                <input type="checkbox" id="arts-communication-menu" class="topic-toggle">
+                <label for="arts-communication-menu">Arts and Communication</label>
+                <!-- add sub menu  Performing Arts Media Arts Visual Arts Literary Arts Cultural / Social Communication-->
+                <ul class="submenu-tag submenu" id="arts-communication-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="performing-arts-tag">
+                        <label for="performing-arts-tag">Performing Arts</label>
+                        <ul class="submenu-tag submenu" id="performing-arts-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="music-tag">
+                                <label for="music-tag">Music</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="dance-tag">
+                                <label for="dance-tag">Dance</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="theatre-tag">
+                                <label for="theatre-tag">Theatre</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="opera-tag">
+                                <label for="opera-tag">Opera</label>
+                            </li>    
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="media-arts-tag">
+                        <label for="media-arts-tag">Media Arts</label>
+                        <!-- add sub menu  Photography Film-->
+                        <ul class="submenu-tag submenu" id="media-arts-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="installation-art-tag">
+                                <label for="installation-art-tag">Installation Art</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="film-tag">
+                                <label for="film-tag">Film</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="digital-art-tag">
+                                <label for="digital-art-tag">Computer / Digital Art (e.g. AI, VR, 3D)</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="visual-arts-tag">
+                        <label for="visual-arts-tag">Visual Arts</label>
+                        <!-- add sub menu  Painting Sculpture-->
+                        <ul class="submenu-tag submenu" id="visual-arts-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="painting-tag">
+                                <label for="painting-tag">Painting</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="sculpture-tag">
+                                <label for="sculpture-tag">Sculpt</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="masks-tag">
+                                <label for="masks-tag">Masks</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="crafts-tag">
+                                <label for="crafts-tag">Crafts</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Literary Arts, Cultural / Social Communication -->
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="literary-arts-tag">
+                        <label for="literary-arts-tag">Literary Arts</label>
+                        <!-- add sub menu  Poetry Prose-->
+                        <ul class="submenu-tag submenu" id="literary-arts-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="poetry-tag">
+                                <label for="poetry-tag">Poetry</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="novel-tag">
+                                <label for="novel-tag">Novel</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="fiction-tag">
+                                <label for="fiction-tag">Fiction</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="cultural-social-communication-tag">
+                        <label for="cultural-social-communication-tag">Cultural / Social Communication</label>
+                
+                            <!-- add sub menu  Oral traditions:  Narratives Storytelling Oral history Proverbs Rhetoric Poetry Quotes Literature Museum Exhibitions Media Presentation Travel Rites and ceremonies-->
+                        <!-- add sub menu  Oral traditions:  Narratives Storytelling Oral history Proverbs Rhetoric Poetry Quotes Literature Museum Exhibitions Media Presentation Travel Rites and ceremonies-->
+                        <ul class="submenu-tag submenu" id="oral-traditions-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="narratives-tag">
+                                <label for="narratives-tag">Narratives</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="storytelling-tag">
+                                <label for="storytelling-tag">Storytelling</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="oral-history-tag">
+                                <label for="oral-history-tag">Oral history</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="proverbs-tag">
+                                <label for="proverbs-tag">Proverbs</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="rhetoric-tag">
+                                <label for="rhetoric-tag">Rhetoric</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="poetry-tag">
+                                <label for="poetry-tag">Poetry</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="quotes-tag">
+                                <label for="quotes-tag">Quotes</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="literature-tag">
+                                <label for="literature-tag">Literature</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="museum-exhibitions-tag">
+                                <label for="museum-exhibitions-tag">Museum Exhibitions</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="media-presentation-tag">
+                                <label for="media-presentation-tag">Media Presentation</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="travel-tag">
+                                <label for="travel-tag">Travel</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="rites-ceremonies-tag">
+                                <label for="rites-ceremonies-tag">Rites and ceremonies</label>
+                            </li>
+                        </ul>
+                            
+                    </li>
+                </ul>        
             </li>
         </ul>
-
+    
+        <!-- Social Structures and Governance -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Human interaction and encountering</label>
-
+                <input type="checkbox" id="social-structures-menu" class="topic-toggle">
+                <label for="social-structures-menu">Social Structures and Governance</label>
+                <!-- add submenu for social structures: Social Structures Socio-political Communities Governance Living Societies Disappeared Societies Past Societies-->
+                <ul class="submenu-tag submenu" id="social-structures-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="social-structures-tag">
+                        <label for="social-structures-tag">Social Structures</label>
+                        <!-- add submenu : Status Religion Age Ethnicity Class Gender Slavery Discrimination Family Household Neighbors Community Citizenship Outsiders Patriarchy Matriarchy-->
+                            <!-- BEGIN: Submenu for Social Structures -->
+                            <ul class="submenu-tag submenu" id="social-structures-submenu">
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="status-tag">
+                                    <label for="status-tag">Status</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="religion-tag">
+                                    <label for="religion-tag">Religion</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="age-tag">
+                                    <label for="age-tag">Age</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="ethnicity-tag">
+                                    <label for="ethnicity-tag">Ethnicity</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="class-tag">
+                                    <label for="class-tag">Class</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="gender-tag">
+                                    <label for="gender-tag">Gender</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="slavery-tag">
+                                    <label for="slavery-tag">Slavery</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="discrimination-tag">
+                                    <label for="discrimination-tag">Discrimination</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="family-tag">
+                                    <label for="family-tag">Family</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="household-tag">
+                                    <label for="household-tag">Household</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="neighbors-tag">
+                                    <label for="neighbors-tag">Neighbors</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="community-tag">
+                                    <label for="community-tag">Community</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="citizenship-tag">
+                                    <label for="citizenship-tag">Citizenship</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="outsiders-tag">
+                                    <label for="outsiders-tag">Outsiders</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="patriarchy-tag">
+                                    <label for="patriarchy-tag">Patriarchy</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="matriarchy-tag">
+                                    <label for="matriarchy-tag">Matriarchy</label>
+                                </li>
+                            </ul>
+                            <!-- END: Submenu for Social Structures -->
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="socio-political-communities-tag">
+                        <label for="socio-political-communities-tag">Socio-political Communities</label>
+                        
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="governance-tag">
+                        <label for="governance-tag">Governance</label>
+                        <!-- add submenu :  Monarchy Democracy Dictatorship Tribal authority Sheikhdom Shariah Secular-->
+                         <!-- BEGIN: Submenu for Governance -->
+                            <ul class="submenu-tag submenu" id="governance-submenu">
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="monarchy-tag">
+                                    <label for="monarchy-tag">Monarchy</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="democracy-tag">
+                                    <label for="democracy-tag">Democracy</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="dictatorship-tag">
+                                    <label for="dictatorship-tag">Dictatorship</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="tribal-authority-tag">
+                                    <label for="tribal-authority-tag">Tribal authority</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="sheikhdom-tag">
+                                    <label for="sheikhdom-tag">Sheikhdom</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="shariah-tag">
+                                    <label for="shariah-tag">Shariah</label>
+                                </li>
+                                <li>
+                                    <input class="topic-toggle" type="checkbox" id="secular-tag">
+                                    <label for="secular-tag">Secular</label>
+                                </li>
+                            </ul>
+                            <!-- END: Submenu for Governance -->
+                        </li>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="living-societies-tag">
+                        <label for="living-societies-tag">Living Societies</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="disappeared-societies-tag">
+                        <label for="disappeared-societies-tag">Disappeared Societies</label>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="past-societies-tag">
+                        <label for="past-societies-tag">Past Societies</label>
+                    </li>
+                </ul>           
             </li>
         </ul>
-
+    
+        <!-- Human Interaction and Encountering -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Human habitation</label>
+                <input type="checkbox" id="human-interaction-menu" class="topic-toggle">
+                <label for="human-interaction-menu">Human Interaction and Encountering</label>
+                    <!-- add submenu :  Mobility , Cultural Amalgamation-->
+                    <!-- BEGIN: Submenu for Human Interaction and Encountering-->
+                    <ul class="submenu-tag submenu" id="human-interaction-submenu">
+                        <li>
+                            <input class="topic-toggle" type="checkbox" id="mobility-tag">
+                            <label for="mobility-tag">Mobility</label>
+                                <!-- BEGIN: Submenu for Mobility -->
+                                <ul class="submenu-tag submenu" id="mobility-submenu">
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="expedition-tag">
+                                        <label for="expedition-tag">Expedition</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="tourism-tag">
+                                        <label for="tourism-tag">Tourism</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="education-tag">
+                                        <label for="education-tag">Education</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="trade-tag">
+                                        <label for="trade-tag">Trade</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="migration-tag">
+                                        <label for="migration-tag">Migration</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="immigration-tag">
+                                        <label for="immigration-tag">Immigration</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="displacement">
+                                        <label for="displacement">Displacement</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="colonization-tag">
+                                        <label for="colonization-tag">Colonization</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="exile-tag">
+                                        <label for="exile-tag">Exile</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="slavery-tag">
+                                        <label for="slavery-tag">Slavery</label>
+                                    </li>
 
-            </li>
-
-        </ul>   
-
-        <ul>
-            <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Tradition</label>
-
+                                </ul>
+                                <!-- END: Submenu for Mobility -->
+                        </li>
+                        <li>
+                            <input class="topic-toggle" type="checkbox" id="cultural-amalgamation-tag">
+                            <label for="cultural-amalgamation-tag">Cultural Amalgamation</label>
+                            <!-- add submenu:  Cosmopolitanism Multi-culturality-->
+                                <!-- BEGIN: Submenu for Cultural Amalgamation-->
+                                <ul class="submenu-tag submenu" id="cultural-amalgamation-submenu">
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="cosmopolitanism-tag">
+                                        <label for="cosmopolitanism-tag">Cosmopolitanism</label>
+                                    </li>
+                                    <li>
+                                        <input class="topic-toggle" type="checkbox" id="multi-culturality-tag">
+                                        <label for="multi-culturality-tag">Multi-culturality</label>
+                                    </li>
+                                </ul>
+                                <!-- END: Submenu for Cultural Amalgamation-->
+                        </li>
+                    </ul>
+                    <!-- END: Submenu for Human Interaction and Encountering-->
             </li>
         </ul>
-
+    
+        <!-- Human Habitation -->
         <ul>
             <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Science and technology</label>
-
-            </li>
-        </ul>   
-
-        <ul>
-            <li>
-                <input type="checkbox" id="topic-Menu" class="topic-toggle">
-                <label for="topic-Menu">Shared and contested heritage</label>
-
+                <input type="checkbox" id="human-habitation-menu" class="topic-toggle">
+                <label for="human-habitation-menu">Human Habitation</label>
+                <!-- add submenu: Past / Ancient Settlements Modern / Contemporary Settlements Continuous Settlements Settlement Elements-->
+                <!-- BEGIN: Submenu for Human Habitation-->
+                <ul class="submenu-tag submenu" id="human-habitation-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="past-ancient-settlements-tag">
+                        <label for="past-ancient-settlements-tag">Past / Ancient Settlements</label>
+                        <!-- add submenu Preliterate Period Bronze Age Iron Age Medieval Religious buildings Administrative buildings Historical buildings Ruins World heritage site-->
+                        <!-- BEGIN: Submenu for Past / Ancient Settlements-->
+                        <ul class="submenu-tag submenu" id="past-ancient-settlements-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="preliterate-period-tag">
+                                <label for="preliterate-period-tag">Preliterate Period</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="bronze-age-tag">
+                                <label for="bronze-age-tag">Bronze Age</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="iron-age-tag">
+                                <label for="iron-age-tag">Iron Age</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="medieval-tag">
+                                <label for="medieval-tag">Medieval</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="religious-buildings-tag">
+                                <label for="religious-buildings-tag">Religious buildings</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="administrative-buildings-tag">
+                                <label for="administrative-buildings-tag">Administrative buildings</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="historical-buildings-tag">
+                                <label for="historical-buildings-tag">Historical buildings</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="ruins-tag">
+                                <label for="ruins-tag">Ruins</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="world-heritage-site-tag">
+                                <label for="world-heritage-site-tag">World heritage site</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="modern-contemporary-settlements-tag">
+                        <label for="modern-contemporary-settlements-tag">Modern / Contemporary Settlements</label>
+                        <!-- add submenu Villages Towns Cities Mega-cities Ruins Suburbs Ghettos Gentrificated Districts-->
+                        <!-- BEGIN: Submenu for Modern / Contemporary Settlements-->
+                        <ul class="submenu-tag submenu" id="modern-contemporary-settlements-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="villages-tag">
+                                <label for="villages-tag">Villages</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="towns-tag">
+                                <label for="towns-tag">Towns</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="cities-tag">
+                                <label for="cities-tag">Cities</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="mega-cities-tag">
+                                <label for="mega-cities-tag">Mega-cities</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="ruins-tag">
+                                <label for="ruins-tag">Ruins</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="suburbs-tag">
+                                <label for="suburbs-tag">Suburbs</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="ghettos-tag">
+                                <label for="ghettos-tag">Ghettos</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="gentrificated-districts-tag">
+                                <label for="gentrificated-districts-tag">Gentrificated Districts</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="continuous-settlements-tag">
+                        <label for="continuous-settlements-tag">Continuous Settlements</label>
+                        <!-- add submenu  Living heritage site World heritage site Old towns of the cities-->
+                        <!-- BEGIN: Submenu for Continuous Settlements-->
+                        <ul class="submenu-tag submenu" id="continuous-settlements-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="living-heritage-site-tag">
+                                <label for="living-heritage-site-tag">Living heritage site</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="world-heritage-site-tag">
+                                <label for="world-heritage-site-tag">World heritage site</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="old-towns-of-the-cities-tag">
+                                <label for="old-towns-of-the-cities-tag">Old towns of the cities</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="settlement-elements-tag">
+                        <label for="settlement-elements-tag">Settlement Elements</label>
+                        <!-- add submenu:   Palaces Monuments Residential Buildings Administrative Buildings Plaza-->
+                         <!-- BEGIN: Submenu for Settlement Elements-->
+                        <ul class="submenu-tag submenu" id="settlement-elements-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="palaces-tag">
+                                <label for="palaces-tag">Palaces</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="monuments-tag">
+                                <label for="monuments-tag">Monuments</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="residential-buildings-tag">
+                                <label for="residential-buildings-tag">Residential Buildings</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="administrative-buildings-tag">
+                                <label for="administrative-buildings-tag">Administrative Buildings</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="plaza-tag">
+                                <label for="plaza-tag">Plaza</label>
+                            </li>
+                            <!-- CONTINUE: Graveyards, Neighborhoods, Central / suburb, Slum / squatted spaces-->
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="graveyards-tag">
+                                <label for="graveyards-tag">Graveyards</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="neighborhoods-tag">
+                                <label for="neighborhoods-tag">Neighborhoods</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="ethnic-clusters-tag">
+                                <label for="ethnic-clusters-tag">Ethnic Clusters</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="central-suburb-tag">
+                                <label for="central-suburb-tag">Central / Suburb</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="slum-squatted-spaces-tag">
+                                <label for="slum-squatted-spaces-tag">Slum / Squatted Spaces</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>        
             </li>
         </ul>
-        
-
-
-        <button id="explore-btn" class="explore-btn">Explore Now</button>
-
+    
+        <!-- Tradition -->
+        <ul>
+            <li>
+                <input type="checkbox" id="tradition-menu" class="topic-toggle">
+                <label for="tradition-menu">Tradition</label>
+                <!-- add submenu Traditional Knowledge Traditional Food and Beverage Traditional Healing Traditions Under Threat-->
+                <!-- BEGIN: Submenu for Tradition-->
+                <ul class="submenu-tag submenu" id="tradition-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="traditional-knowledge-tag">
+                        <label for="traditional-knowledge-tag">Traditional Knowledge</label>
+                        <!-- add submenu  Oral Traditions Traditional Training Traditional Agriculture Traditional Art Vernacular Architecture Shipbuilding-->
+                        <!-- BEGIN: Submenu for Traditional Knowledge-->
+                        <ul class="submenu-tag submenu" id="traditional-knowledge-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="oral-traditions-tag">
+                                <label for="oral-traditions-tag">Oral Traditions</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="traditional-training-tag">
+                                <label for="traditional-training-tag">Traditional Training</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="traditional-agriculture-tag">
+                                <label for="traditional-agriculture-tag">Traditional Agriculture</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="traditional-art-tag">
+                                <label for="traditional-art-tag">Traditional Art</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="vernacular-architecture-tag">
+                                <label for="vernacular-architecture-tag">Vernacular Architecture</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="shipbuilding-tag">
+                                <label for="shipbuilding-tag">Shipbuilding</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="traditional-food-beverage-tag">
+                        <label for="traditional-food-beverage-tag">Traditional Food and Beverage</label>
+                        <!-- add submenu  Winemaking Olive Oil Process Bread making Ceremonial Feasts Festival Feasts Funeral Feasts Circumcise Feasts Religious Feasts (iftar) Treating neighbor with food Welcoming stranger Sacrification Fruit offering-->
+                        <!-- BEGIN: Submenu for Traditional Food and Beverage-->
+                        <ul class="submenu-tag submenu" id="traditional-food-beverage-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="winemaking-tag">
+                                <label for="winemaking-tag">Winemaking</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="olive-oil-process-tag">
+                                <label for="olive-oil-process-tag">Olive Oil Process</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="bread-making-tag">
+                                <label for="bread-making-tag">Bread making</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="ceremonial-feasts-tag">
+                                <label for="ceremonial-feasts-tag">Ceremonial Feasts</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="festival-feasts-tag">
+                                <label for="festival-feasts-tag">Festival Feasts</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="funeral-feasts-tag">
+                                <label for="funeral-feasts-tag">Funeral Feasts</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="circumcise-feasts-tag">
+                                <label for="circumcise-feasts-tag">Circumcise Feasts</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="religious-feasts-iftar-tag">
+                                <label for="religious-feasts-iftar-tag">Religious Feasts (iftar)</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="treating-neighbor-with-food-tag">
+                                <label for="treating-neighbor-with-food-tag">Treating neighbor with food</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="welcoming-stranger-tag">
+                                <label for="welcoming-stranger-tag">Welcoming stranger</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="sacrification-tag">
+                                <label for="sacrification-tag">Sacrification</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="fruit-offering-tag">
+                                <label for="fruit-offering-tag">Fruit offering</label>
+                            </li>
+                        </ul>      
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="traditional-healing-tag">
+                        <label for="traditional-healing-tag">Traditional Healing</label>
+                        <!-- add submenu   Devil Dances Masks Ayurvedic Religious Healing-->
+                        <!-- BEGIN: Submenu for Traditional Healing-->
+                        <ul class="submenu-tag submenu" id="traditional-healing-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="devil-dances-tag">
+                                <label for="devil-dances-tag">Devil Dances</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="masks-tag">
+                                <label for="masks-tag">Masks</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="ayurvedic-tag">
+                                <label for="ayurvedic-tag">Ayurvedic</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="religious-healing-tag">
+                                <label for="religious-healing-tag">Religious Healing</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="traditions-under-threat-tag">
+                        <label for="traditions-under-threat-tag">Traditions Under Threat</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    
+        <!-- Science and Technology -->
+        <ul>
+            <li>
+                <input type="checkbox" id="science-technology-menu" class="topic-toggle">
+                <label for="science-technology-menu">Science and Technology</label>
+                <!-- add submenu  Science Technology-->
+                <!-- BEGIN: Submenu for Science and Technology-->
+                <ul class="submenu-tag submenu" id="science-technology-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="science-tag">
+                        <label for="science-tag">Science</label>
+                        <!-- add submenu   Medicine Maps / Mapping Conservation Mineralogy-->
+                        <!-- BEGIN: Submenu for Science-->
+                        <ul class="submenu-tag submenu" id="science-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="medicine-tag">
+                                <label for="medicine-tag">Medicine</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="maps-mapping-tag">
+                                <label for="maps-mapping-tag">Maps / Mapping</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="conservation-tag">
+                                <label for="conservation-tag">Conservation</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="mineralogy-tag">
+                                <label for="mineralogy-tag">Mineralogy</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="technology-tag">
+                        <label for="technology-tag">Technology</label>
+                        <!-- add submenu  Pyrotechnology Architecture Shipbuilding Automobile Navigation Agriculture tools Hunting tools Pearl diving tools Communication tools-->
+                        <!-- BEGIN: Submenu for Technology-->
+                        <ul class="submenu-tag submenu" id="technology-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="pyrotechnology-tag">
+                                <label for="pyrotechnology-tag">Pyrotechnology</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="architecture-tag">
+                                <label for="architecture-tag">Architecture</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="shipbuilding-tag">
+                                <label for="shipbuilding-tag">Shipbuilding</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="automobile-tag">
+                                <label for="automobile-tag">Automobile</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="navigation-tag">
+                                <label for="navigation-tag">Navigation</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="agriculture-tools-tag">
+                                <label for="agriculture-tools-tag">Agriculture tools</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="hunting-tools-tag">
+                                <label for="hunting-tools-tag">Hunting tools</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="pearl-diving-tools-tag">
+                                <label for="pearl-diving-tools-tag">Pearl diving tools</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="communication-tools-tag">
+                                <label for="communication-tools-tag">Communication tools</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>         
+            </li>
+        </ul>
+    
+        <!-- Shared and Contested Heritage -->
+        <ul>
+            <li>
+                <input type="checkbox" id="shared-contested-menu" class="topic-toggle">
+                <label for="shared-contested-menu">Shared and Contested Heritage</label>
+                <!-- add submenu  Memory and Identity Heritage Preservation-->
+                <!-- BEGIN: Submenu for Shared and Contested Heritage-->
+                <ul class="submenu-tag submenu" id="shared-contested-submenu">
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="memory-identity-tag">
+                        <label for="memory-identity-tag">Memory and Identity</label>
+                        <!-- add submenu   Resistance Conflict Wars Indigenous peoples Identity Memory politics Revolution Colonization Decolonization Reconciliation-->
+                        <!-- BEGIN: Submenu for Memory and Identity-->
+                        <ul class="submenu-tag submenu" id="memory-identity-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="resistance-tag">
+                                <label for="resistance-tag">Resistance</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="conflict-tag">
+                                <label for="conflict-tag">Conflict</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="wars-tag">
+                                <label for="wars-tag">Wars</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="indigenous-peoples-tag">
+                                <label for="indigenous-peoples-tag">Indigenous peoples</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="identity-tag">
+                                <label for="identity-tag">Identity</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="memory-politics-tag">
+                                <label for="memory-politics-tag">Memory politics</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="revolution-tag">
+                                <label for="revolution-tag">Revolution</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="colonization-tag">
+                                <label for="colonization-tag">Colonization</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="decolonization-tag">
+                                <label for="decolonization-tag">Decolonization</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="reconciliation-tag">
+                                <label for="reconciliation-tag">Reconciliation</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="topic-toggle" type="checkbox" id="heritage-preservation-tag">
+                        <label for="heritage-preservation-tag">Heritage Preservation</label>
+                        <!-- add submenu   Heritage Management Heritage Tourism Heritage Diplomacy Heritage Ownership-->
+                        <!-- BEGIN: Submenu for Heritage Preservation-->
+                        <ul class="submenu-tag submenu" id="heritage-preservation-submenu">
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="heritage-management-tag">
+                                <label for="heritage-management-tag">Heritage Management</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="heritage-tourism-tag">
+                                <label for="heritage-tourism-tag">Heritage Tourism</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="heritage-diplomacy-tag">
+                                <label for="heritage-diplomacy-tag">Heritage Diplomacy</label>
+                            </li>
+                            <li>
+                                <input class="topic-toggle" type="checkbox" id="heritage-ownership-tag">
+                                <label for="heritage-ownership-tag">Heritage Ownership</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- <div> -->
+        <button id="explore-btn" class="explore-btn">Explore Now</button>
+    <!-- </div> -->
 
     <div>
         <div id="map"></div>
     </div>
+
     <!-- SEARCH button -->
     <button id="search-btn" class="search-btn"
         onclick="toggle(document.querySelector('.hamburguer-menu'))">SEARCH</button>
