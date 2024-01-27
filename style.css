@@ -273,23 +273,19 @@ body {
     opacity: 0;
     height: 104%;
     display: flex;
-    /* align-items: center; */
-    /*    flex-direction: column; */
-    /* 	justify-content: space-between;  */
-    /*   justify-content: center; */
     transition: all 0.4s ease 0s;
-    overflow: hidden;
     position: absolute;
-    /* Added */
     right: 0;
-    /* Align to the right */
     top: 0;
-    /* Align to the top */
     z-index: 1;
     width: 25%;
     color: white;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    justify-content: flex-start;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
 }
 
 .menu-expanded ul {
@@ -458,6 +454,9 @@ label {
 .change~.menu-expanded {
     max-width: 400px;
     opacity: 1;
+
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
 
 }
 

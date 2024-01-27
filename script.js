@@ -73,6 +73,8 @@ function handleTreeDropdownClick(event) {
 
 document.getElementById('search-btn').addEventListener('click', function () {
     document.getElementById('filter-sidebar').classList.toggle('active');
+    
+
 });
 
 // Set active theme
@@ -121,6 +123,7 @@ function filterMarkers(handleData) {
     })
 }
 
+///Submenu Section///
 
 function toggle(element) {
     element.classList.toggle("change");
@@ -174,7 +177,6 @@ function toggleAllLabels() {
 
 //     });
 // });
-
 
 // Function to toggle the visibility of a submenu
 function toggleSubmenu(submenuId, show) {
