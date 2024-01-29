@@ -14,6 +14,15 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.{e
     ext: 'jpg'
 }).addTo(map);
 
+// buttin to zoom out to the min zoom and default center
+var zoomout = document.getElementById('zoomout');
+zoomout.onclick = function (e) {
+    e.preventDefault();
+    map.setView([21.505, 35.09], 3);
+}
+
+
+
 let body = document.querySelector('body');
 body.onload = loadData;
 
